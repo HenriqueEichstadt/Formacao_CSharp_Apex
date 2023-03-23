@@ -3,7 +3,7 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 
 
 
-**## Aula - 20/03**
+## Aula - 20/03
 
 ###Certificações gratuítas para ajudar a melhorar perfil no LinkedIn
 
@@ -19,3 +19,12 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 - https://www.dio.me/bootcamp/decola-tech-3a-edicao
 	- Inscrições até 30/05
 	- recomendo seguir o perfil @dio_makethechange no instagram
+
+
+###Plugins do Visual Studio Code par usar no módulo de lógica e algoritmos
+- Code Runner
+- IntelliSense for CSS class names in HTML
+- Material Icon Theme
+- Auto Close Tag
+- Auto Rename Tag
+- Prettier - Code formatter
