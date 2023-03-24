@@ -8,34 +8,41 @@
 
     <script>
       /*
-    Enunciado:
-        O usuário deverá informar a largura de cada lado de um triângulo, peça as
-        três larguras (direito, inferior e esquerdo) e verifique o tipo de triângulo. Os
-        tipos e triângulos são:
-        Isósceles = 2 lados iguais e um diferente
-        Escaleno = Três lados diferentes
-        Equilátero = Três lados iguais
+      # Nível de dificuldade: médio
+      # Enunciado:
+          O usuário deverá informar a largura de cada lado de um triângulo, peça as
+          três larguras (direito, inferior e esquerdo) e verifique o tipo de triângulo. Os
+          tipos e triângulos são:
+          
+          Isósceles = 2 lados iguais e um diferente
+          Escaleno = Três lados diferentes
+          Equilátero = Três lados iguais
+        
+    # Para resolver:
+        - Utilize o conteúdo sobre operadores relacionais e lógicos apresentados em sala e presentes na apostila;
+        - Exiba o resultado na tela utilizando a função document.write("TEXTO...");
+        - Fique atento ao console do navegador (tecla F12 para abrir), erros de sintaxe do código são apresentados lá;
     */
 
-      // input 1
-      let ladoDireito = parseInt(prompt("Indique a largura do lado direito do triângulo"));
+    // *************** Escreva a resolução abaixo ***************
 
-      // input 2
-      let ladoInferior = parseInt(prompt("Indique a largura do lado inferior do triângulo"));
+      // input lado 1
+      let lado1 = parseInt(prompt("Insira o lado 1"));
 
-      // input 3
-      let ladoEsquerdo = parseInt(prompt("Indique a largura do lado esquerdo do triângulo"));
+      // input lado 2
+      let lado2 = parseInt(prompt("Insira o lado 2"));
 
-      // Condição
+      // input lado 3
+      let lado3 = parseInt(prompt("Insira o lado 3"));
 
-      if ((ladoDireito == ladoInferior && ladoDireito != ladoEsquerdo)
-        || (ladoDireito == ladoEsquerdo && ladoDireito != ladoInferior)) {
-        document.write("Triângulo Isósceles");
-      } else if (ladoDireito != ladoInferior && ladoDireito != ladoEsquerdo) {
-        document.write("Triângulo Escaleno");
-      } else if (ladoDireito == ladoInferior && ladoDireito == ladoEsquerdo) {
+      if ((lado1 == lado2) && (lado2 == lado3)) {
         document.write("Triângulo Equilátero");
+      } else if ((lado1 == lado2) || (lado2 == lado3) || (lado1 == lado3)) {
+        document.write("Triângulo Isóceles");
+      } else if ((lado1 != lado2) && (lado2 != lado3)) {
+        document.write("Triângulo Escaleno");
       }
+
     </script>
   </head>
   <body></body>

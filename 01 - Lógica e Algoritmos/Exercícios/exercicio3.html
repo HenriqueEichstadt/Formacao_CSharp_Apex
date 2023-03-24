@@ -9,7 +9,8 @@
     <script>
 
     /*
-    Enunciado:
+    # Nível de dificuldade: médio
+    # Enunciado:
         Haverá uma lista com quatro produtos que uma lanchonete vende, o usuário
         precisa informar o código do produto, em seguida o valor pago por ele. Nosso
         sistema precisa retornar o troco que deve ser dado ao cliente, valide caso o
@@ -20,9 +21,13 @@
         2           Pão de Queijo   R$ 4,00
         3           Macarrão        R$ 16,00
 
+    # Para resolver:
+        - Utilize o conteúdo sobre operadores relacionais e lógicos apresentados em sala e presentes na apostila;
+        - Exiba o resultado na tela utilizando a função document.write("TEXTO...");
+        - Fique atento ao console do navegador (tecla F12 para abrir), erros de sintaxe do código são apresentados lá;
     */
 
-    // Resolução
+    // *************** Escreva a resolução abaixo ***************
 
     // input do numero 1
     let codigoProduto = parseInt(prompt("Insira o código do produto"));
@@ -30,11 +35,8 @@
     // input do numero 2
     let valorEmDinheiro = parseInt(prompt("Insira o valor recebido em dinheiro"));
 
-    // Inclua a condição abaixo
-
     // definir qual o valor do produto selecionado
     let valorProduto = 0;
-
 
     if(codigoProduto == 1) {
         valorProduto = 12;
@@ -54,10 +56,6 @@
     else if(valorEmDinheiro < valorProduto) {
         document.write("O valor é inferior ao valor do produto");
     }
-
-
-    
-
 
     </script>
 

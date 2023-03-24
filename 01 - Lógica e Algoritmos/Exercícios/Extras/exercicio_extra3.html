@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 4</title>
+    <title>Exercício extra 2 - Operação matemática</title>
 
     <script>
 
     /*
     # Nível de dificuldade: médio
     # Enunciado:
-        Peça para o usuário informar três números, em seguida exiba o menor deles.
-
+        O usuário deverá informar dois valores numéricos e um número que representa a operação que deverá ser realizada com estes valores
+        
+        Operações:
+        1 - Soma
+        2 - Subtração
+        3 - Multiplicação
+        4 - Divisão
+            
     # Para resolver:
         - Utilize o conteúdo sobre operadores relacionais e lógicos apresentados em sala e presentes na apostila;
         - Exiba o resultado na tela utilizando a função document.write("TEXTO...");
@@ -21,25 +27,19 @@
 
     // *************** Escreva a resolução abaixo ***************
 
-    // input do numero 1
-    let numero1 = parseInt(prompt("Insira o número 1"));
+    // input do valor 1
+    let valor1 = parseInt(prompt("Insira um número para o valor 1"));
 
-    // input do numero 2
-    let numero2 = parseInt(prompt("Insira o número 2"));
+    // input do lado 2
+    let valor2 = parseInt(prompt("Insira um número para o valor 2"));
 
-    // input do numero 3
-    let numero3 = parseInt(prompt("Insira o número 3"));
+    // input da operação que deve ser realizada
+    let operacao = parseInt(prompt(" Escolha a operação \n 1 - Soma \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão"));
 
+    
     // Inclua a condição abaixo
-    if(numero1 < numero2 && numero1 < numero3) {
-        document.write("O menor número é o " + numero1);
-    }
-    else if(numero2 < numero1 && numero2 < numero3) {
-        document.write("O menor número é o " + numero2);
-    }
-    else if(numero3 < numero1 && numero3 < numero2) {
-        document.write("O menor número é o " + numero3);
-    }
+    
+
 
     </script>
 
