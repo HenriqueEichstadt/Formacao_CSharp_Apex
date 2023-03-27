@@ -32,3 +32,6 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 ## Aula - 22/03
 - Exercícios extras incluídos no repositório
 - Desafio extra incluído no repositório
+
+
+## Aula - 27/03
