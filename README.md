@@ -35,3 +35,20 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 
 
 ## Aula - 27/03
+
+- Estruturas de repetição
+	- while
+		- Utilizada quando você precisa que seja executado enquanto uma determinada condição for verdadeira. Funciona com variáveis de 'contador', mas você precisa criá-las manualmente e ir incrementando/decrementando;
+		- Se a condição for falsa desde o início, nunca é executado;
+		- O programa verifica a condição e só executa enquanto for verdadeira;
+		- Utilizado quando você *NÃO* sabe quantas vezes a execução irá se repetir
+
+	- do while
+		- Diferente do while, o bloco de código é executado pelo menos uma vez, mesmo com a condição falsa desde o início;
+		- O programa executa o bloco e verifica após a execução se deve repetir a execução;
+		- Utilizado quando você *NÃO* sabe quantas vezes a execução irá se repetir
+	
+	- for
+		- Utilizado somente quando é necessário ter uma variável de 'contador';
+		- A sintaxe do for obriga o desenvolvedor a criar o contador, a regra de repetição e se deve incrementar ou decrementar;
+		- Deve ser utilizado quando você *SABE* quantas vezes deve repetir a execução;
