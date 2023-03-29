@@ -20,7 +20,6 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 	- Inscrições até 30/05
 	- recomendo seguir o perfil @dio_makethechange no instagram
 
-
 ### Plugins do Visual Studio Code par usar no módulo de lógica e algoritmos
 - Code Runner
 - IntelliSense for CSS class names in HTML
@@ -28,6 +27,7 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 - Auto Close Tag
 - Auto Rename Tag
 - Prettier - Code formatter
+
 
 ## Aula - 22/03
 - Exercícios extras incluídos no repositório
@@ -52,3 +52,27 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 		- Utilizado somente quando é necessário ter uma variável de 'contador';
 		- A sintaxe do for obriga o desenvolvedor a criar o contador, a regra de repetição e se deve incrementar ou decrementar;
 		- Deve ser utilizado quando você *SABE* quantas vezes deve repetir a execução;
+
+
+## Aula - 29/03
+
+- Vetores(ou arrays) e Matrizes (vetores de vetores / vetores bidimensionais)
+	- Vetores(ou arrays)
+		- Conjunto de elementos do mesmo tipo (string, numérico. booleano, etc...);
+		- Utilizado quando você precisa de uma estrutura que guarda mais de um valor;
+		- Possuem 1 dimensão;
+
+	- Matrizes (vetores de vetores / vetores bidimensionais)
+		- Utilizada em cenários que necessitam de mais de uma dimensão;
+		- Exemplos de uso: 
+			-	Representar linhas e colunas;
+			-	Criar tabelas;
+		- A ideia é incluir um vetor dentro de uma posição de outro vetor;
+		- Possuem 2 dimensões;
+
+
+
+
+
+
+
