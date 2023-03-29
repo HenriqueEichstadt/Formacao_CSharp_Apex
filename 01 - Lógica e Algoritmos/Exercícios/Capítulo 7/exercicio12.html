@@ -26,10 +26,27 @@
       // input do número final
       let numeroFinal = parseInt(prompt("Insira o número final"));
 
-      // utilize um dos laços em questão: 'while' 'do-while' ou 'for'
-       (???) {
+      let quantidadePares = 0;
+      let quantidadeImpares = 0;
 
+      // utilize um dos laços em questão: 'while' 'do-while' ou 'for'
+      
+      // numeroInicial = 0
+      // numeroFinal = 10
+      
+      for(var contador = numeroInicial; contador <= numeroFinal; contador++) {
+
+        if(contador % 2 == 0) {
+          quantidadePares++;
+        } else {
+          quantidadeImpares++;
+        }
       }
+
+      document.write("Quantidade de pares: " + quantidadePares);
+      document.write('<br>');
+      document.write("Quantidade de impares: " + quantidadeImpares);
+      
 
     </script>
   </head>

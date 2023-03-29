@@ -29,10 +29,18 @@
       let horaBrasil = parseInt(prompt("Insira a hora no brasil"));
 
       // input do fuso horário para conversão
-      let valor = parseInt(prompt(" Escolha o fuso horário \n 1 - New York/Estados Unidos \n 2 - Berlim/Alemanha \n 3 - Lisboa/Portugal"));
+      let fusoHorario = parseInt(prompt(" Escolha o fuso horário \n 1 - New York/Estados Unidos \n 2 - Berlim/Alemanha \n 3 - Lisboa/Portugal"));
 
-      switch (???) {
-
+      switch (fusoHorario) {
+        case 1: //New York/Estados Unidos
+          document.write("Horário em New York/Estados Unidos: " + (horaBrasil - 1) + "h");
+          break;
+        case 2: //Berlim/Alemanha
+          document.write("Horário em Berlim/Alemanha: " + (horaBrasil + 5) + "h");
+          break;
+        case 3: //Lisboa/Portugal
+          document.write("Horário em Lisboa/Portugal: " + (horaBrasil + 4) + "h");
+          break;
       }
 
     </script>

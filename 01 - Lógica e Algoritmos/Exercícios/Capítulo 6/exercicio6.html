@@ -29,9 +29,19 @@
       // input da conversão
       let conversao = parseInt(prompt(" Escolha a conversão \n 1 - Célsius para Fahrenheit \n 2 - Fahrenheit para Célsius"));
 
-      switch (???) {
+      let resultadoConversao = 0;
 
+      switch (conversao) {
+        case 1: 
+          resultadoConversao = (1.8 * temperatuda + 32);
+          break;
+        case 2: 
+          resultadoConversao = ((temperatuda - 32) * 5 / 9);
+          break;
       }
+
+      // A função toFixed(1) é utilizada para manter apenas 1 casa decimal após a virgula do resultado da conversão
+      document.write("Resultado da conversão: " + resultadoConversao.toFixed(1) + "º");
 
     </script>
   </head>

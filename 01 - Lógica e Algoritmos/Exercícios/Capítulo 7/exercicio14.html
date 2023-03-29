@@ -26,9 +26,18 @@
 
     // *************** Escreva a resolução abaixo ***************
 
-      // utilize um dos laços em questão: 'while' 'do-while' ou 'for'
-       (???) {
+      // Como no problema em questão o maior número é 5, criamos uma variavel de controle com o valor 5 que irá 'diminuir' de valor
+      // até chegar no valor 1
+      let primeiroNumeroDaLinha = 5;
 
+      while(primeiroNumeroDaLinha >= 1) {
+        for(let contador = primeiroNumeroDaLinha; contador >= 1; contador--) {
+          document.writeln(contador);
+        }
+        document.write('<br>');
+        
+        // Após imprimir os valores da linha, deve decrementar o valor
+        primeiroNumeroDaLinha--;
       }
 
     </script>

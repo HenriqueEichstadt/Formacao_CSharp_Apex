@@ -10,6 +10,8 @@
       /*
       # Enunciado:
         Crie um pequeno sistema de votação, exiba em um prompt() as opções:
+        Enquanto não for digitado o número 5 o laço deverá realizar a ação de prompt() para pedir o voto e contabilizar para o candidato. Quando
+        informado o número 5 retorne a quantidade de votos que cada candidato obteve.
 
         Candidatos:
           - (1) Alessandra
@@ -28,12 +30,40 @@
     // *************** Escreva a resolução abaixo ***************
 
       // input do número inicial
-      let numeroVoto = parseInt(prompt("Insira o seu voto para um dos candidatos: \n 1 - Alessandra \n 2 - Caio \n 3 - Geraldo \n 4 - Talita \n 5 - Sair"));
+      let numeroVoto = 0;
+
+      let votosCandidato1 = 0;  // votos para a Alessandra
+      let votosCandidato2 = 0;  // votos para o Caio
+      let votosCandidato3 = 0;  // votos para o Geraldo
+      let votosCandidato4 = 0;  // votos para a Talita
 
       // utilize um dos laços em questão: 'while' 'do-while' ou 'for'
-       (???) {
+      while (numeroVoto != 5) {
 
+        // Pedir mais de uma vez o voto da pessoa
+        numeroVoto = parseInt(prompt("Insira o seu voto para um dos candidatos: \n 1 - Alessandra \n 2 - Caio \n 3 - Geraldo \n 4 - Talita \n 5 - Sair"));
+
+        if(numeroVoto == 1) {
+          votosCandidato1++;
+        }
+        else if(numeroVoto == 2) {
+          votosCandidato2++;
+        }
+        else if(numeroVoto == 3) {
+          votosCandidato3++;
+        }
+        else if(numeroVoto == 4) {
+          votosCandidato4++;
+        }
       }
+
+      document.write("Votos para a Alessandra: " + votosCandidato1);
+      document.write('<br>');
+      document.write("Votos para o Caio: " + votosCandidato2);
+      document.write('<br>');
+      document.write("Votos para o Geraldo: " + votosCandidato3);
+      document.write('<br>');
+      document.write("Votos para a Talita: " + votosCandidato4);
 
     </script>
   </head>

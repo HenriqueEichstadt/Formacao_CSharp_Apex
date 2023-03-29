@@ -21,8 +21,18 @@
 
     let maximoTentativas = 3;
 
-    // Resolva utilizando for
-    for(???; ???; ???) {
+    for(var tentativas = 1; tentativas <= maximoTentativas; tentativas++) {
+
+        // Pedir um valor aleatório para o usuário
+        let numeroTentativa = parseInt(prompt("Tentativa " + tentativas + "/" + maximoTentativas + ". Escolha um número e tente adivinhar qual o número aleatório"));
+
+        if(numeroTentativa == numeroAleatorio) {
+            document.write("Você acertou, o número aleatório é " + numeroAleatorio);
+            break; // O break é usado para parar a execução do for, forçando o javascript a sair de sua execução
+        }
+        else if(tentativas == maximoTentativas) {
+            document.write("Você perdeu, o número aleatório é " + numeroAleatorio);
+        }
     }
     
     </script>

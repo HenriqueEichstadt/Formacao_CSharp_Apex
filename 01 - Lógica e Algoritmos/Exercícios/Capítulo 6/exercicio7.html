@@ -31,9 +31,25 @@
       // input da conversão
       let conversao = parseInt(prompt(" Escolha a conversão \n 1 - Real para Dólar \n 2 - Dólar para Real \n 3 - Real para Euro \n 4 - Euro para Real"));
 
-      switch (???) {
+      let resultadoConversao = 0;
 
+      switch (conversao) {
+        case 1: //Real para Dólar
+          resultadoConversao = (valor / 5.25);
+          break;
+        case 2: //Dólar para Real
+          resultadoConversao = (valor * 5.25);
+          break;
+        case 3: //Real para Euro
+          resultadoConversao = (valor / 5.65);
+          break;
+        case 4: //Euro para Real
+          resultadoConversao = (valor * 5.65);
+          break;
       }
+
+      // A função toFixed(2) é utilizada para manter apenas 2 casas decimais após a virgula do resultado da conversão
+      document.write("Resultado da conversão: " + resultadoConversao.toFixed(2));
 
     </script>
   </head>

@@ -34,9 +34,25 @@
       // input do segmento
       let segmento = parseInt(prompt(" Escolha o segmento \n 1 - Vestuário \n 2 - Eletrônico \n 3 - Alimentício"));
 
-      switch (???) {
+      let nomeSegmento = "";
+      let valorComDesconto = 0;
 
+      switch (segmento) {
+        case 1: //Vestuário
+          valorComDesconto = valor * 0.95;
+          nomeSegmento = "Vestuário";
+          break;
+        case 2: //Eletrônico
+          valorComDesconto = valor * 0.92;
+          nomeSegmento = "Eletrônico";
+          break;
+        case 3: //Alimentício
+          valorComDesconto = valor * 0.9;
+          nomeSegmento = "Alimentício";
+          break;
       }
+
+      document.write("O produto " + nomeProduto + " do segmento " + nomeSegmento + " com o desconto, custará R$" + valorComDesconto.toFixed(2));
 
     </script>
   </head>
