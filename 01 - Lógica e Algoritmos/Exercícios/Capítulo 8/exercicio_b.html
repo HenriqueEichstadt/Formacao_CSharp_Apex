@@ -19,14 +19,29 @@
 
     // *************** Escreva a resolução abaixo ***************
     
-    // Coloque o prompt abaixo dentro de um laço para solicitar 5 vezes que o usuário informe um número
-    var numeroInput = parseInt(prompt("Insira um número"));
+    // criando um vetor para guardar os 5 números
+    var vetor = [];
+
     
+    // pedir pro usuário 5 números
+    for(var contador = 0; contador < 5; contador++) {
 
+      // pede um número
+      var numeroInput = parseInt(prompt("Insira um número"));
+      // guarda número no vetor
+      vetor.push(numeroInput);
+    }
 
+    var somaValores = 0;
 
+    // mostrar os itens
+    for(var indice = 0; indice < vetor.length; indice++) {
+      var itemNoIndice = vetor[indice];
+      
+      somaValores = somaValores + itemNoIndice;
+    }
 
-
+    document.write("Soma: " + somaValores);
     
     </script>
   </head>
