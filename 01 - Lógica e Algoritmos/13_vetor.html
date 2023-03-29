@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor</title>
+
+    <script>
+
+    // Criando um vetor sem nada dentro
+    let meuVetorVazio = [];
+
+    // Criando um vetor com elementos
+    let meuVetor = ['Texto 1', 'Texto 2', 'Texto 9999'];
+
+    // Acessar um item do vetor pelo índice
+    var primeiroItem = meuVetor[0];
+    //document.write(primeiroItem);
+
+    // acessando último índice do vetor
+    var ultimoItem = meuVetor[meuVetor.length - 1];
+    //document.write(ultimoItem);
+
+    // editando o item no índice 1
+    meuVetor[1] = 'Apex';
+    
+    // Adicionar dinamicamente itens no vetor
+    let vetor = [];
+    // incluindo o valor 10
+    vetor.push(10);
+
+    // incluindo o valor 5
+    vetor.push(5);
+    
+    // remover item no índice 0
+    vetor.splice(0, 1);                     // [5]
+
+    // remover item pelo 'valor' dele
+    const indiceDoElementoARemover = vetor.indexOf('Texto 9999');
+    vetor.splice(indiceDoElementoARemover, 1);
+
+
+    // Listar os itens do vetor meuVetor
+    //['Texto 1', 'Apex', 'Texto 9999']
+    for(var indice = 0; indice < meuVetor.length; indice++) {
+
+        var itemNoIndice = meuVetor[indice];
+
+        document.write("Índice: " + indice + " Valor: " + itemNoIndice + '<br>');
+    }
+
+    document.write("Tamanho do vetor: " + meuVetor.length + '<br>');
+
+    // 1ª iteração, indice é 0 e o valor é Texto 1
+    // 2ª iteração, indice é 1 e o valor é Apex
+    // 3ª iteração, indice é 2 e o valor é Texto 9999
+    // 4ª iteração, indice é 3, a condição fica falsa e o for deixa de executar
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
