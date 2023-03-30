@@ -18,13 +18,28 @@
 
     // *************** Escreva a resolução abaixo ***************
 
+    // criar um vetor
+    var vetorNumeros = [];
 
+    // Pedir 5 vezes um número e guardar no vetor
+    for(var count = 0; count < 5; count++) {
+      var numero = parseInt(prompt("Escreva um número"));
+      vetorNumeros.push(numero);
+    }
 
+    // Forma 1 de reverter itens e exibir na tela
+    //vetorNumros.reveerse();
+    // for(var indice = 0; indice < vetorNumros.length; indice++) {
+    //   var itemNoIndice = vetorNumros[indice];
+    //   document.write("Índice: " + indice + " Valor: " + itemNoIndice + '<br>');
+    // }
 
-
-
-
-
+    // Forma 2 de exibir itens de forma inversa na tela
+    // Atenção: Este for é para exibir em ordem inversa
+    for(var indice = vetorNumeros.length - 1; indice >= 0; indice--) {
+      var itemNoIndice = vetorNumeros[indice];
+      document.write("Índice: " + indice + " Valor: " + itemNoIndice + '<br>');
+    }
 
     
     </script>
