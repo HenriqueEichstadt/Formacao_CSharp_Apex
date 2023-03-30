@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz</title>
+
+    <script>
+
+
+        var vetor = [
+            ['João',  'Silva',       25],
+            ['Zé',    'dos Santos',  30],
+            ['André', 'Costa',       35],
+        ];
+
+        for(var linha = 0; linha < vetor.length; linha++) {
+            for(var coluna = 0; coluna < vetor[0].length; coluna++) {
+
+                var itemNaLinhaEColuna = vetor[linha][coluna];
+
+                //document.write("Item na linha " + linha + " e coluna " + coluna + ": " + itemNaLinhaEColuna + " ");
+                jogarOTextoNaTela(itemNaLinhaEColuna);
+            }
+            document.write('<br>');
+        }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
