@@ -25,10 +25,6 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 	- Inscrição: até 30/05
 	- recomendo seguir o perfil @dio_makethechange no instagram
 
-- https://www.devs2blu.com.br/
-	- Inscrição: não encontrei a data final
-	- recomendo seguir o perfil @devs2blu no instagram
-
 
 ### Plugins do Visual Studio Code par usar no módulo de lógica e algoritmos
 - Code Runner
