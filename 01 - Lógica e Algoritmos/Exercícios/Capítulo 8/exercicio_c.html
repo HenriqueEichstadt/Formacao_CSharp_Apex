@@ -20,14 +20,22 @@
     // *************** Escreva a resolução abaixo ***************
 
     // Crie um vetor para armazenar palavras
-    var vetor = ???;
+    var palavras = [];
 
     var palavra = "";
 
     // enquanto não for informada a palavra 'sair'
-    while(???) {
+    while(palavra != "sair") {
       palavra = prompt("Insira uma palavra ou digite 'sair");
 
+      if(palavra != "sair") {
+        palavras.push(palavra);
+      }
+    }
+
+    for(var indice = 0; indice < palavras.length; indice++) {
+      var itemNoIndice = palavras[indice];
+      document.write("Índice: " + indice + " Valor: " + itemNoIndice + '<br>');
     }
 
 
