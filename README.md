@@ -19,12 +19,13 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 - Programa Entra21
 	- recomendo seguir o perfil @entra21.blusoft no instagram
 
-
-
 - https://www.dio.me/bootcamp/decola-tech-3a-edicao
 	- Inscrição: até 30/05
 	- recomendo seguir o perfil @dio_makethechange no instagram
 
+- https://99jobs.com/pagonxt-merchant-solutions-brazil/jobs/301422
+	- Consideram estudo em escola de programação como formação
+	- Inscrições até 09/04 ou 10/10
 
 ### Plugins do Visual Studio Code par usar no módulo de lógica e algoritmos
 - Code Runner
