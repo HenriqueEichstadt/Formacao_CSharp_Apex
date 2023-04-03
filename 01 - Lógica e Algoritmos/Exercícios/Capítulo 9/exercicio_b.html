@@ -21,14 +21,20 @@
     
     // Crie uma matriz 3x2
     let matriz = [
-      []
+      ['Javascript', 150],
+      ['Banco de dados', 250],
+      ['Github', 25],
     ];
     
     // Exiba os valores da matriz
-    for(??) {
-      for(??) {
+    for(var linha = 0; linha < matriz.length; linha++) {
+      for(var coluna = 0; coluna < matriz[0].length; coluna++) {
 
+          var itemNaLinhaEColuna = matriz[linha][coluna];
+
+          document.writeln(itemNaLinhaEColuna);
       }
+      document.write('<br>');
     }
 
     

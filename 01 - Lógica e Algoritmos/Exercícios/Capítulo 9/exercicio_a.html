@@ -22,16 +22,21 @@
     
     // Crie uma matriz 3x3
     let matriz = [
-      []
+      ['Notebook', 'Lenovo', 5500],
+      ['Mousepad', 'Husky', 100],
+      ['Mouse', 'Logitec', 250],
     ];
     
     // Exiba os valores da matriz
-    for(??) {
-      for(??) {
+    for(var linha = 0; linha < matriz.length; linha++) {
+      for(var coluna = 0; coluna < matriz[0].length; coluna++) {
 
+          var itemNaLinhaEColuna = matriz[linha][coluna];
+
+          document.writeln(itemNaLinhaEColuna);
       }
+      document.write('<br>');
     }
-
     
     </script>
   </head>

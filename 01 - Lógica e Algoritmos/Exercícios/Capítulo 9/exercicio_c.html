@@ -29,21 +29,23 @@
     ];
     
     // Percorra a matriz, solicite valores e insira em cada posição zerada
-    for(??) {
-      for(??) {
+    for(var linha = 0; linha < matriz.length; linha++) {
+      for(var coluna = 0; coluna < matriz[0].length; coluna++) {
         // input do número inicial
         let inputNumero = parseInt(prompt("Insira um número"));
+
+        matriz[linha][coluna] = inputNumero;
       }
     }
     
-
     // Exiba os valores da matriz
-    for(??) {
-      for(??) {
-
+    for(var linha = 0; linha < matriz.length; linha++) {
+      for(var coluna = 0; coluna < matriz[0].length; coluna++) {
+        var itemNaLinhaEColuna = matriz[linha][coluna];
+        document.writeln(itemNaLinhaEColuna);
       }
+      document.write('<br>');
     }
-
     
     </script>
   </head>
