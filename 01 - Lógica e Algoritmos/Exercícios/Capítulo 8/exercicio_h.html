@@ -18,14 +18,39 @@
 
     // *************** Escreva a resolução abaixo ***************
 
-  
+    // criar um vetor
+    var vetorNumeros = [];
+
+    // variável para guardar o menor número (Iniciando com um valor bem alto para que o primeiro item inserido no array seja o menor)
+    let menorNumero = 9999999999999;
+
+    // variável para guardar o maior número (Iniciando com um valor bem baixo para que o primeiro item inserido no array seja o maior)
+    let maiorNumero = -9999999999999;
+
+    // Pedir 7 vezes um número e guardar no vetor
+    for(var count = 0; count < 5; count++) {
+      var numero = parseInt(prompt("Escreva um número"));
+      vetorNumeros.push(numero);
+    }
     
-    
+    // Imprimindo números e verificando o maior e o menor
+    for(var count = 0; count < 5; count++) {
+      var itemNoIndice = vetorNumeros[count];
+      document.write("Índice: " + count + " - Valor: " + itemNoIndice + '<br>');
 
+      //verificando se é o menor
+      if(itemNoIndice < menorNumero) {
+        menorNumero = itemNoIndice;
+      }
 
+      //verificando se é o maior
+      if(itemNoIndice > maiorNumero) {
+        maiorNumero = itemNoIndice;
+      }
+    }
 
-
-
+    document.write("Menor número: " + menorNumero + '<br>');
+    document.write("Maior número: " + maiorNumero + '<br>');
     
     </script>
   </head>

@@ -18,14 +18,29 @@
 
     // *************** Escreva a resolução abaixo ***************
 
-  
+      // criar um vetor
+      var vetorNumeros = [];
+
+      // Pedir 5 vezes um número e guardar no vetor
+      for(var count = 0; count < 5; count++) {
+        var numero = parseInt(prompt("Escreva um número"));
+        vetorNumeros.push(numero);
+      }
+
+      let quantidadeNumerosDez = 0;
+
+      // Verificar quantos números 10 existem no vetor
+      for(var indice = 0; indice < vetorNumeros.length; indice++) {
+        var itemNoIndice = vetorNumeros[indice];
+        
+        if(itemNoIndice == 10) {
+          quantidadeNumerosDez++;
+        }
+      }
     
+      // Imprimindo o resultado
+      document.write("Quantidade de números '10' informados: " + quantidadeNumerosDez);
     
-
-
-
-
-
     
     </script>
   </head>

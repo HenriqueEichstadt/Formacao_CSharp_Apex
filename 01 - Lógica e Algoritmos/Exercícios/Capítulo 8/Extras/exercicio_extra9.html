@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capítulo 8 - Exercício extra 9</title>
+
+    <script>
+      /*
+      # Enunciado:
+        Um texto(string) é na verdade um vetor de caracteres internamente no javascript, portanto podemos percorrer cada caractere
+        da mesma forma que percorremos cada item de um array. Este exercício extra tem por objeto mostrar esta possibilidade.
+        
+        Crie uma variável de texto(string) e insira um valor nela. Depois percorra o texto e imprima de forma vertical.
+
+        Ex: let meuTexto = "Olá, mundo";
+
+        Resultado esperado:
+
+            O
+            l
+            á
+            ,
+
+            m
+            u
+            n
+            d
+            o
+
+    # Para resolver:
+        - Exiba o resultado na tela utilizando a função document.write("TEXTO...");
+        - Fique atento ao console do navegador (tecla F12 para abrir), erros de sintaxe do código são apresentados lá;
+    */
+
+    // *************** Escreva a resolução abaixo ***************
+    
+    // Criando uma variável de texto (string)
+    let meuTexto = "Olá, mundo";
+    
+    // Exiba os valores do seu vetor
+    for(var indice = 0; indice < meuTexto.length; indice++) {
+
+      var caractereNoIndice = meuTexto[indice];
+
+      document.write(caractereNoIndice + '<br>');
+    }
+    
+    </script>
+  </head>
+  <body></body>
+</html>

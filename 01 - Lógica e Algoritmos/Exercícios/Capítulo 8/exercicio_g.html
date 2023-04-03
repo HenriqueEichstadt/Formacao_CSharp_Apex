@@ -21,13 +21,39 @@
 
     // *************** Escreva a resolução abaixo ***************
 
-  
+    // criando um vetor com 10 produtos
+    var produtos = [
+      'Arroz',
+      'Macarrão',
+      'Trigo',
+      'Maçã',
+      'Ameixa',
+      'Banana',
+      'Abacaxi',
+      'Ovos',
+      'Coca-cola',
+      'Pepsi',
+    ];
+
+    var produtosNoCarrinhoDeCompras = [];
     
-    
+    var codigoProduto = 0;
 
+    // enquanto não for informada a palavra 'sair'
+    while(codigoProduto != 11) {
+      codigoProduto = parseInt(prompt("Selecione um produto de 1 a 10 ou digite 11 para imprimir os selecionados"));
 
+      if(codigoProduto != 11) {
+        let produto = produtos[codigoProduto-1]; // tem que ser -1 pois o array começa em 0 e o primeiro produto tem código 1
+        produtosNoCarrinhoDeCompras.push(produto);
+      }
+    }
 
-
+    // Imprimindo os produtos selecionados
+    for(var indice = 0; indice < produtosNoCarrinhoDeCompras.length; indice++) {
+      var itemNoIndice = produtos[indice];
+      document.write("Código: " + (indice + 1) + " - Produto: " + itemNoIndice + '<br>');
+    }
 
     
     </script>

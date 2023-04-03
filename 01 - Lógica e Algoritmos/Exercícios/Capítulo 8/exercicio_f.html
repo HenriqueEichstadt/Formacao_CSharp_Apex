@@ -19,13 +19,43 @@
     // *************** Escreva a resolução abaixo ***************
 
   
+    // criar um vetor
+    var vetorNumeros = [];
+
+    // variável para guardar a soma
+    let somaValores = 0;
+
+    // variável para guardar a média
+    let mediaValores = 0;
+
+    // variável para contar quantos números são maiores ou iguais a média
+    let quantidadeMaioresOuIguaisMedia = 0;
+
+    // Pedir 7 vezes um número e guardar no vetor
+    for(var count = 0; count < 7; count++) {
+      var numero = parseInt(prompt("Escreva um número"));
+      vetorNumeros.push(numero);
+
+      // somando os valores
+      somaValores = somaValores + numero;
+    }
     
-    
+    // calculando a média
+    mediaValores = somaValores / 7;
 
+    // Passando em cada item para verificar quantos são maiores ou iguais a média
+    for(var count = 0; count < 7; count++) {
+      var itemNoIndice = vetorNumeros[count];
 
+      if(itemNoIndice >= mediaValores) {
+        quantidadeMaioresOuIguaisMedia++;
+      }
+    }
 
-
-
+    // imprimindo resultados
+    document.write("Soma dos valores: " + somaValores + '<br>');
+    document.write("Média dos valores: " + mediaValores + '<br>');
+    document.write("Quantidade de maiores ou iguais a média: " + quantidadeMaioresOuIguaisMedia + '<br>');
     
     </script>
   </head>
