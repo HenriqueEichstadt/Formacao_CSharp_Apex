@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função - function no clique de botão</title>
+
+    <script>
+    
+    function executarVerificacao() {
+
+        // obter os valores dos inputs de nota 1 e 2
+
+        var nota1 = parseInt(document.getElementById("nota1").value);
+        var nota2 = parseInt(document.getElementById("nota2").value);
+
+        // cálculo da média
+        var media = calcularMedia(nota1, nota2);
+
+        // verificar a situação dele (passou de ano ou não)
+        var situacao = verificarSituacao(media);
+
+        // mensagem
+        alert("O aluno está " + situacao + " com a média " + media);
+
+    }
+
+    function verificarSituacao(mediaAluno) {
+        if(mediaAluno >= 6) {
+            return "Aprovado";
+        } else {
+            return "Reprovado";
+        }
+    }
+
+    function calcularMedia(valorA, valorB) {
+        let resultadoMedia = (valorA + valorB) / 2;
+        return resultadoMedia;
+    }
+    
+    </script>
+
+</head>
+<body>
+
+    <form>
+
+        <input type="text" placeholder="Digite aqui uma nota" id="nota1">
+        <input type="text" placeholder="Digite aqui mais uma nota" id="nota2">
+        <input type="button" value="Verificar" onclick="executarVerificacao()">
+
+    </form>
+
+</body>
+</html>
