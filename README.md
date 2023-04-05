@@ -79,7 +79,18 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 
 
 ## Aula - 03/04
-
+	- Git e Github
+	- Capítulo 10 Funções
 
 ## Aula - 05/04
 
+- Banco de dados SQL Server
+
+	- Link do SQL Server 2017 Express
+		https://www.microsoft.com/pt-br/download/confirmation.aspx?id=55994
+
+	- Link do SQL Server Management Studio:
+		https://www.microsoft.com/pt-br/download/confirmation.aspx?id=55994
+
+	- Link direto do SQL Server Management Studio: 
+		https://go.microsoft.com/fwlink/?linkid=2099720
