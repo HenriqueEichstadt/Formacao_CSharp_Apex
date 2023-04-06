@@ -94,3 +94,6 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 
 	- Link direto do SQL Server Management Studio: 
 		- https://go.microsoft.com/fwlink/?linkid=2099720
+
+- Verificando segurança da senha
+	- https://www.security.org/how-secure-is-my-password/
