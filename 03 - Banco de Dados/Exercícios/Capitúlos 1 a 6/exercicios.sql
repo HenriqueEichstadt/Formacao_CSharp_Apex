@@ -3,28 +3,16 @@
 
 -- 1. Criar uma base de dados chamada: exercicio
 
-
+CREATE DATABASE exercicio;
 
 -- 2. Selecionar a base criada anteriormente
 
-
+USE exercicio;
 
 -- 3. Criar uma tabela chamada uzuarios, com a seguinte estrutura:
         -- a. nome varchar de 20 caracteres
         -- b. sobrenome de 40 caracteres
         -- c. idade do tipo inteiro
-
-
-
--- a. nome varchar de 20 caracteres
-
-
-
--- b. sobrenome de 40 caracteres
-
-
-
--- c. idade do tipo inteiro
 
 
 
