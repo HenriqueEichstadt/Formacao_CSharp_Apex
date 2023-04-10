@@ -14,19 +14,23 @@ USE exercicio;
         -- b. sobrenome de 40 caracteres
         -- c. idade do tipo inteiro
 
-
+CREATE TABLE Uzuarios(
+	Nome VARCHAR(20),
+	Sobrenome VARCHAR(40),
+	Idade INT
+);
 
 -- 4. Renomeie a tabela uzuarios para usuarios.
 
-
+EXEC sp_rename 'Uzuarios', 'Usuarios';
 
 -- 5. Adicione uma coluna e-mail com suporte até 40 caracteres
 
+ALTER TABLE Usuarios ADD Email VARCHAR(40);
 
+-- 6. Exclua a coluna Sobrenome
 
--- 6. Exclua a coluna sobrenome
-
-
+ALTER TABLE Usuarios DROP COLUMN Sobrenome;
 
 -- 7. Cadastre os seguintes dados:
     /*
@@ -42,10 +46,21 @@ USE exercicio;
     Cibele null cibele_lins@uol.com.br
     */
 
+INSERT INTO Usuarios (Nome, Idade, Email)
+	VALUES
+	('Vanessa', 16, 'vanessa.rosa@gmail.com'),
+    ('Adailton', 22, 'adailton.mas@yahoo.com'),
+    ('Andressa', 36, 'andressa.simas@uol.com.br'),
+    ('Mayra', 24, 'mayra_antunes@gmail.com'),
+    ('Cristiane', 14, 'cris.maya@gmail.com'),
+    ('Carina', 27, 'carina.almeida@gmail.com'),
+    ('Clóvis', 29, 'clovis.simao@hotmail.com'),
+    ('Gabriela', 23, 'gabriela.bragantino@live.com'),
+    ('Cibele', null, 'cibele_lins@uol.com.br');
 
 -- 8. Exiba quantos registros existem na tabela
 
-
+SELECT COUNT(*) FROM Usuarios;
 
 -- 9. Exibir a quantidade de usuários com idade até 17 anos
 
