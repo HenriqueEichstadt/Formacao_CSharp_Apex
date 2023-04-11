@@ -64,19 +64,20 @@ SELECT COUNT(*) FROM Usuarios;
 
 -- 9. Exibir a quantidade de usuários com idade até 17 anos
 
-
+SELECT COUNT(*) AS Quantidade FROM Usuarios where Idade <= 17;
 
 -- 10.Retornar a quantidade de usuários com o e-mail gmail
 
-
+SELECT COUNT(*) FROM Usuarios WHERE Email LIKE '%gmail%'
 
 -- 11.Retornar o nome e a idade da pessoa mais velha
 
-
+SELECT TOP 1 Nome, Idade FROM Usuarios ORDER BY Idade DESC;
 
 -- 12.Retornar os dados do usuário com idade igual a nulo
 
-
+SELECT * FROM Usuarios Where Idade IS NULL
+--SELECT * FROM Usuarios Where Idade IS NOT NULL
 
 -- 13.Alterar para 27 todas as idades nulas
 
