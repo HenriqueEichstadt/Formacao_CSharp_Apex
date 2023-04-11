@@ -81,7 +81,7 @@ SELECT * FROM Usuarios Where Idade IS NULL
 
 -- 13.Alterar para 27 todas as idades nulas
 
-
+UPDATE Usuarios SET Idade = 27 WHERE Idade IS NULL;
 
 -- 14.Deletar todos os usuários com idade inferior a 18 anos
 
@@ -93,4 +93,17 @@ SELECT * FROM Usuarios Where Idade IS NULL
 
 -- 16.Excluir a base de dados
 
+
+
+-- EXTRAS
+-- 17. Obter Nome e Idade do Usuário mais novo (menor idade)
+
+
+-- 18. Obter média de Idade dos Usuarios
+
+
+-- 19. Obter Soma da idade dos Usuários
+
+
+-- 20. Obter Idade e quantidade de registros (com a idade)
 
