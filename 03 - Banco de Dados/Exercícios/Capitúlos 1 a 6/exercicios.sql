@@ -85,15 +85,15 @@ UPDATE Usuarios SET Idade = 27 WHERE Idade IS NULL;
 
 -- 14.Deletar todos os usuários com idade inferior a 18 anos
 
-
+DELETE FROM Usuarios WHERE Idade < 18;
 
 -- 15.Excluir todos os dados da tabela e reiniciar a contabilização
 
-
+DELETE FROM Usuarios;
 
 -- 16.Excluir a base de dados
 
-
+DROP DATABASE exercicio;
 
 -- EXTRAS
 -- 17. Obter Nome e Idade do Usuário mais novo (menor idade)
