@@ -79,4 +79,15 @@ FROM Clientes AS cli
 		ON cid.Id = cli.IdCidade;
 
 
+-- INNER JOIN -> registro precisa existir na tabela 'Clientes' e na 'Cidades'
 
+-- LEFT JOIN -> registro precisa existir na tabela principal e pode não
+-- existir no JOIN
+
+SELECT * FROM Clientes -- obrigatório
+	LEFT JOIN Cidades ON Cidades.Id = Clientes.IdCidade; -- join opcional
+
+-- RIGHT JOIN
+
+SELECT * FROM Clientes -- opcional
+	RIGHT JOIN Cidades ON Cidades.Id = Clientes.IdCidade; -- join obrigatorio
