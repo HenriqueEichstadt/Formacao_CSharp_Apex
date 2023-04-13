@@ -49,4 +49,6 @@
 --    independente se há clientes realizando esse curso.
 
 
+-- 8. Exiba o nome dos cursos que não possuem nenhum cliente participando
+
 
