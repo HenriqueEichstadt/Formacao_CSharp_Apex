@@ -97,3 +97,14 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 
 - Verificando segurança da senha
 	- https://www.security.org/how-secure-is-my-password/
+
+
+## Aula - 10/04
+	- Módulo de banco de dados
+## Aula - 12/04
+	- Módulo de banco de dados
+## Aula - 17/04
+	- Módulo de banco de dados
+
+## Aula - 19/04
+	- Módulo de C# Fundamentos
