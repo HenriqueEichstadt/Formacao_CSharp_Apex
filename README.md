@@ -108,3 +108,5 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 
 ## Aula - 19/04
 	- Módulo de C# Fundamentos
+	- link download Visual Studio 2019 Community:
+		- https://visualstudio.microsoft.com/pt-br/vs/older-downloads/
