@@ -4,6 +4,10 @@ namespace Capitulo4.Operadores
 {
     internal class Program
     {
+        /// <summary>
+        /// Este objeto faz alguma coisa
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
 
@@ -127,6 +131,27 @@ hskajdhskj";
                 : "É uma condição falsa";
 
             Console.WriteLine(resultado);
+
+
+            // Linhas de Comentário
+
+            // Comentário de uma linha
+
+            /*
+             dlkfjdsl
+            - 123
+            - 456
+             */
+
+            // Input e Output
+
+            // Output
+            Console.WriteLine("Imprimindo algo aqui");
+
+            // Input
+            // prompt()
+            string escritaUsuario = Console.ReadLine();
+            Console.WriteLine($"Você escreveu: {escritaUsuario}");
         }
     }
 }
