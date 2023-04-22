@@ -150,8 +150,9 @@ hskajdhskj";
 
             // Input
             // prompt()
-            string escritaUsuario = Console.ReadLine();
-            Console.WriteLine($"Você escreveu: {escritaUsuario}");
+            Console.WriteLine("Insira um texto:");
+            string textoEscritoPeloUsuario = Console.ReadLine();
+            Console.WriteLine($"Você escreveu: {textoEscritoPeloUsuario}");
         }
     }
 }

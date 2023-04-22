@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+        // paramos na página 29 da apostila em 19/04
         static void Main(string[] args)
         {
             Imprimir();
