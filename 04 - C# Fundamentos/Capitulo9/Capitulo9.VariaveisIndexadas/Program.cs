@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            // 'arrays' ou 'vetores
+            // 'arrays' ou 'vetores'
             int[] arrayDeInteiros = new int[] { 0, 1, 1, 2, 3, 5, 8, 13 };
             
             string[] arrayDeTextos = new string[] { "Segunda", "Terça", "Quarta" };
@@ -22,6 +22,12 @@
 
 
             // Listas - Collections
+
+            // Criando com itens dentro
+            var listaComItens = new List<int>() { 1, 2, 3, 4, 5 };
+
+
+            // Criando vazia e adicionando itens dinamicamente
             var minhaLista = new List<string>();
             // adicionar itens na lista
             minhaLista.Add("Henrique");
@@ -45,7 +51,7 @@
             }
 
 
-            int[,] arrayBidimensional = new int[,] 
+            int[,] matriz = new int[,] 
             { 
                 { 1, 2 }, 
                 { 3, 4 }, 
@@ -53,13 +59,14 @@
                 { 7, 8 }
             };
 
-            /*for(var i = 0; i < arrayBidimensional.Length; i++)
+            for (int i = 0; i < matriz.GetLength(0); i++)
             {
-                for (var j = 0; j < arrayBidimensional[i, 0]; j++)
+                for (int j = 0; j < matriz.GetLength(1); j++)
                 {
-                    Console.WriteLine(arrayBidimensional[i, j]);
+                    int valor = matriz[i, j];
+                    Console.WriteLine(valor);
                 }
-            }*/
+            }
 
         }
     }
