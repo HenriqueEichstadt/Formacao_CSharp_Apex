@@ -9,7 +9,12 @@
          */
         static void Main(string[] args)
         {
-            Console.WriteLine("Resolva...");
+            Console.WriteLine("Valor de um produto");
+            var valorProduto = double.Parse(Console.ReadLine());
+
+
+            var valorComDesconto = valorProduto * 0.91;
+            Console.WriteLine($"Valor com desconto: {valorComDesconto}");
         }
     }
 }

@@ -15,11 +15,11 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Qual o salário mínimo");
-            var salarioMinimo = decimal.Parse(Console.ReadLine());
+            var salarioMinimo = double.Parse(Console.ReadLine());
 
 
             Console.WriteLine("Quantidade de quilowatts gasta");
-            var quilowattsGastos = decimal.Parse(Console.ReadLine());
+            var quilowattsGastos = double.Parse(Console.ReadLine());
 
 
             // O valor em reais de cada quilowatt
@@ -32,7 +32,7 @@
 
 
             // O novo valor a ser pago por essa residência com um desconto de 10%
-            var valorComDesconto = valorPago * 0.9m;
+            var valorComDesconto = valorPago * 0.9;
             Console.WriteLine("O novo valor a ser pago por essa residência com um desconto de 10%: " + valorComDesconto);
 
         }
