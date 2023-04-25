@@ -104,8 +104,13 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 	- link download Visual Studio 2019 Community:
 		- https://visualstudio.microsoft.com/pt-br/vs/older-downloads/
 
+	- links de instalação do .NET5 e .NET6
+		- https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-5.0.408-windows-x64-installer
+		- https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.408-windows-x64-installer
+
 ## Aula - 24/04
 	- Continuação do módulo de C# Fundamentos - Até capítulo 10
 	- Exercícios dos módulos 1 a 10 e mais 40 exercícios do módulo 12
 
 ## Aula - 26/04
+	- Capítulo 11 – Orientação à Objetos
