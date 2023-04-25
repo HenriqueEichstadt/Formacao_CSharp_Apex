@@ -9,7 +9,18 @@
          */
         static void Main(string[] args)
         {
-            Console.WriteLine("Resolva...");
+            var valorGastorestaurante = SolicitarValor("Qual o valor gasto?");
+
+            // aplicando mais 10% na comanda de gasto
+            var valorComGorjeta = valorGastorestaurante * 1.1;
+            Console.WriteLine($"O valor gasto com a gorjeta foi de {valorComGorjeta}");
+        }
+
+        private static double SolicitarValor(string mensagemSolicitacao)
+        {
+            Console.WriteLine(mensagemSolicitacao);
+            var valorGastorestaurante = double.Parse(Console.ReadLine());
+            return valorGastorestaurante;
         }
     }
 }
