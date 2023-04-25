@@ -12,6 +12,17 @@
 
             int resultadoSoma = SomarValores(5, 10);
             Console.WriteLine(resultadoSoma);
+
+            int media = CalcularMedia(10, 15, 20);
+            Console.WriteLine("Média é: " + media);
+
+            Console.ReadLine();
+        }
+
+        static string SolicitarValor()
+        {
+            Console.WriteLine("Insira um valor");
+            return Console.ReadLine();
         }
 
         static void Imprimir()
@@ -28,6 +39,12 @@
         {
             int resultado = valor1 + valor2;
             return resultado;
+        }
+
+        static int CalcularMedia(int valor1, int valor2, int valor3)
+        {
+            int media = (valor1 + valor2 + valor3) / 3;
+            return media;
         }
     }
 }

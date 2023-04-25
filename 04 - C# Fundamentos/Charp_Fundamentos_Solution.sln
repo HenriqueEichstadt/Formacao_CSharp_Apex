@@ -87,65 +87,73 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio09", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio10", "Capitulo12\Capitulo12.Exercicio10\Capitulo12.Exercicio10.csproj", "{D049DB1E-D879-4FD7-AAFB-1CC8CD01E547}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio11", "Capitulo12\Capitulo12.Exercicio11\Capitulo12.Exercicio11.csproj", "{3843E4CF-C572-4314-8CBF-347984B1A3CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio11", "Capitulo12\Capitulo12.Exercicio11\Capitulo12.Exercicio11.csproj", "{3843E4CF-C572-4314-8CBF-347984B1A3CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio12", "Capitulo12\Capitulo12.Exercicio12\Capitulo12.Exercicio12.csproj", "{B5E8432D-15E2-422C-B0E4-329FD3A110B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio12", "Capitulo12\Capitulo12.Exercicio12\Capitulo12.Exercicio12.csproj", "{B5E8432D-15E2-422C-B0E4-329FD3A110B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio13", "Capitulo12\Capitulo12.Exercicio13\Capitulo12.Exercicio13.csproj", "{D1E8C5A1-94E7-4CA7-8D7E-B21138F0841F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio13", "Capitulo12\Capitulo12.Exercicio13\Capitulo12.Exercicio13.csproj", "{D1E8C5A1-94E7-4CA7-8D7E-B21138F0841F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio14", "Capitulo12\Capitulo12.Exercicio14\Capitulo12.Exercicio14.csproj", "{1D9332F5-32D9-46E5-B5A0-58E5EB8F5411}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio14", "Capitulo12\Capitulo12.Exercicio14\Capitulo12.Exercicio14.csproj", "{1D9332F5-32D9-46E5-B5A0-58E5EB8F5411}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio15", "Capitulo12\Capitulo12.Exercicio15\Capitulo12.Exercicio15.csproj", "{B1C82645-F6DA-47AA-8452-A5CA444CFC7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio15", "Capitulo12\Capitulo12.Exercicio15\Capitulo12.Exercicio15.csproj", "{B1C82645-F6DA-47AA-8452-A5CA444CFC7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio16", "Capitulo12\Capitulo12.Exercicio16\Capitulo12.Exercicio16.csproj", "{3DB27A3B-790B-4C03-A2DA-0AD714EBBE7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio16", "Capitulo12\Capitulo12.Exercicio16\Capitulo12.Exercicio16.csproj", "{3DB27A3B-790B-4C03-A2DA-0AD714EBBE7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio17", "Capitulo12\Capitulo12.Exercicio17\Capitulo12.Exercicio17.csproj", "{DF59A9E1-BB62-4F61-A02C-DFA526D7ACE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio17", "Capitulo12\Capitulo12.Exercicio17\Capitulo12.Exercicio17.csproj", "{DF59A9E1-BB62-4F61-A02C-DFA526D7ACE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio18", "Capitulo12\Capitulo12.Exercicio18\Capitulo12.Exercicio18.csproj", "{234631C0-1E8C-4389-A125-C6C0F4AF8598}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio18", "Capitulo12\Capitulo12.Exercicio18\Capitulo12.Exercicio18.csproj", "{234631C0-1E8C-4389-A125-C6C0F4AF8598}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio19", "Capitulo12\Capitulo12.Exercicio19\Capitulo12.Exercicio19.csproj", "{27C8149D-7634-4B9C-A071-DD17ED937721}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio19", "Capitulo12\Capitulo12.Exercicio19\Capitulo12.Exercicio19.csproj", "{27C8149D-7634-4B9C-A071-DD17ED937721}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio20", "Capitulo12\Capitulo12.Exercicio20\Capitulo12.Exercicio20.csproj", "{21A85B9E-FBCB-4D1E-BF4C-651313473C57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio20", "Capitulo12\Capitulo12.Exercicio20\Capitulo12.Exercicio20.csproj", "{21A85B9E-FBCB-4D1E-BF4C-651313473C57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio21", "Capitulo12\Capitulo12.Exercicio21\Capitulo12.Exercicio21.csproj", "{FE9DC46F-55EC-4F93-A93F-7BA9053D7689}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio21", "Capitulo12\Capitulo12.Exercicio21\Capitulo12.Exercicio21.csproj", "{FE9DC46F-55EC-4F93-A93F-7BA9053D7689}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio22", "Capitulo12\Capitulo12.Exercicio22\Capitulo12.Exercicio22.csproj", "{9E743E36-5AC0-4255-B53D-D2DB9F20844D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio22", "Capitulo12\Capitulo12.Exercicio22\Capitulo12.Exercicio22.csproj", "{9E743E36-5AC0-4255-B53D-D2DB9F20844D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio23", "Capitulo12\Capitulo12.Exercicio23\Capitulo12.Exercicio23.csproj", "{060A93ED-FA9F-439D-BABB-301EC0F1EAF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio23", "Capitulo12\Capitulo12.Exercicio23\Capitulo12.Exercicio23.csproj", "{060A93ED-FA9F-439D-BABB-301EC0F1EAF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio24", "Capitulo12\Capitulo12.Exercicio24\Capitulo12.Exercicio24.csproj", "{C3869579-14D3-48F2-8A92-A6E0C6863089}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio24", "Capitulo12\Capitulo12.Exercicio24\Capitulo12.Exercicio24.csproj", "{C3869579-14D3-48F2-8A92-A6E0C6863089}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio25", "Capitulo12\Capitulo12.Exercicio25\Capitulo12.Exercicio25.csproj", "{94FDA0E5-7A62-4486-A9C5-B18999144965}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio25", "Capitulo12\Capitulo12.Exercicio25\Capitulo12.Exercicio25.csproj", "{94FDA0E5-7A62-4486-A9C5-B18999144965}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio26", "Capitulo12\Capitulo12.Exercicio26\Capitulo12.Exercicio26.csproj", "{4C59FDDC-96F8-492E-B080-AA8750ECD39A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio26", "Capitulo12\Capitulo12.Exercicio26\Capitulo12.Exercicio26.csproj", "{4C59FDDC-96F8-492E-B080-AA8750ECD39A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio27", "Capitulo12\Capitulo12.Exercicio27\Capitulo12.Exercicio27.csproj", "{EE56A8B7-E906-4D70-8ACE-6DAB284EBF1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio27", "Capitulo12\Capitulo12.Exercicio27\Capitulo12.Exercicio27.csproj", "{EE56A8B7-E906-4D70-8ACE-6DAB284EBF1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio28", "Capitulo12\Capitulo12.Exercicio28\Capitulo12.Exercicio28.csproj", "{23C22941-CDD7-403E-822A-A32B6C717F66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio28", "Capitulo12\Capitulo12.Exercicio28\Capitulo12.Exercicio28.csproj", "{23C22941-CDD7-403E-822A-A32B6C717F66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio29", "Capitulo12\Capitulo12.Exercicio29\Capitulo12.Exercicio29.csproj", "{7EF3935D-93F8-4E46-B5F1-DA54338C7513}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio29", "Capitulo12\Capitulo12.Exercicio29\Capitulo12.Exercicio29.csproj", "{7EF3935D-93F8-4E46-B5F1-DA54338C7513}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio30", "Capitulo12\Capitulo12.Exercicio30\Capitulo12.Exercicio30.csproj", "{0B94BA3B-6B53-487B-BE61-09E31AC60922}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio30", "Capitulo12\Capitulo12.Exercicio30\Capitulo12.Exercicio30.csproj", "{0B94BA3B-6B53-487B-BE61-09E31AC60922}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio31", "Capitulo12\Capitulo12.Exercicio31\Capitulo12.Exercicio31.csproj", "{DD805F18-B8EF-447C-AE28-71DEF4A2C3DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio31", "Capitulo12\Capitulo12.Exercicio31\Capitulo12.Exercicio31.csproj", "{DD805F18-B8EF-447C-AE28-71DEF4A2C3DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio32", "Capitulo12\Capitulo12.Exercicio32\Capitulo12.Exercicio32.csproj", "{F9472C31-B977-45DC-B395-625734A147B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio32", "Capitulo12\Capitulo12.Exercicio32\Capitulo12.Exercicio32.csproj", "{F9472C31-B977-45DC-B395-625734A147B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio33", "Capitulo12\Capitulo12.Exercicio33\Capitulo12.Exercicio33.csproj", "{21309A62-00FD-4833-91A2-437B00E14E99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio33", "Capitulo12\Capitulo12.Exercicio33\Capitulo12.Exercicio33.csproj", "{21309A62-00FD-4833-91A2-437B00E14E99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio34", "Capitulo12\Capitulo12.Exercicio34\Capitulo12.Exercicio34.csproj", "{204D43E6-8C35-4B46-BE84-BA9876668C8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio34", "Capitulo12\Capitulo12.Exercicio34\Capitulo12.Exercicio34.csproj", "{204D43E6-8C35-4B46-BE84-BA9876668C8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio35", "Capitulo12\Capitulo12.Exercicio35\Capitulo12.Exercicio35.csproj", "{64E6BC59-C5A6-4EF4-AC60-2BC6A3A4296D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio35", "Capitulo12\Capitulo12.Exercicio35\Capitulo12.Exercicio35.csproj", "{64E6BC59-C5A6-4EF4-AC60-2BC6A3A4296D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio36", "Capitulo12\Capitulo12.Exercicio36\Capitulo12.Exercicio36.csproj", "{D02B21DB-277F-42A8-B884-0C1F92741B63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio36", "Capitulo12\Capitulo12.Exercicio36\Capitulo12.Exercicio36.csproj", "{D02B21DB-277F-42A8-B884-0C1F92741B63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio37", "Capitulo12\Capitulo12.Exercicio37\Capitulo12.Exercicio37.csproj", "{334AB30C-0120-46B0-9BB4-4E2D364B47E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio37", "Capitulo12\Capitulo12.Exercicio37\Capitulo12.Exercicio37.csproj", "{334AB30C-0120-46B0-9BB4-4E2D364B47E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio38", "Capitulo12\Capitulo12.Exercicio38\Capitulo12.Exercicio38.csproj", "{E49AED87-CECB-4C6A-99B9-80BD9945E224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio38", "Capitulo12\Capitulo12.Exercicio38\Capitulo12.Exercicio38.csproj", "{E49AED87-CECB-4C6A-99B9-80BD9945E224}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio39", "Capitulo12\Capitulo12.Exercicio39\Capitulo12.Exercicio39.csproj", "{28D5BFF3-B58E-43F7-9473-3D019E652308}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio39", "Capitulo12\Capitulo12.Exercicio39\Capitulo12.Exercicio39.csproj", "{28D5BFF3-B58E-43F7-9473-3D019E652308}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo12.Exercicio40", "Capitulo12\Capitulo12.Exercicio40\Capitulo12.Exercicio40.csproj", "{5B119BF8-3B6D-4A1A-936B-75701813807D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo12.Exercicio40", "Capitulo12\Capitulo12.Exercicio40\Capitulo12.Exercicio40.csproj", "{5B119BF8-3B6D-4A1A-936B-75701813807D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo6.FuncoesNET", "Capitulo6\Capitulo6.FuncoesNET\Capitulo6.FuncoesNET.csproj", "{B64718F1-F497-4AA9-B309-2423F162CB5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo7.Condicionais", "Capitulo7\Capitulo7.Condicionais\Capitulo7.Condicionais.csproj", "{175DA10F-CD87-4249-B8F3-F18FB4A01CAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo8.LacosRepeticao", "Capitulo8\Capitulo8.LacosRepeticao\Capitulo8.LacosRepeticao.csproj", "{AAA733A7-F210-4E1F-BE2E-9094780F3043}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo9.VariaveisIndexadas", "Capitulo9\Capitulo9.VariaveisIndexadas\Capitulo9.VariaveisIndexadas.csproj", "{B8195FE8-CBB6-4400-982B-4FD703DF30D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -373,6 +381,22 @@ Global
 		{5B119BF8-3B6D-4A1A-936B-75701813807D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B119BF8-3B6D-4A1A-936B-75701813807D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B119BF8-3B6D-4A1A-936B-75701813807D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B64718F1-F497-4AA9-B309-2423F162CB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64718F1-F497-4AA9-B309-2423F162CB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64718F1-F497-4AA9-B309-2423F162CB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64718F1-F497-4AA9-B309-2423F162CB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175DA10F-CD87-4249-B8F3-F18FB4A01CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175DA10F-CD87-4249-B8F3-F18FB4A01CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175DA10F-CD87-4249-B8F3-F18FB4A01CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175DA10F-CD87-4249-B8F3-F18FB4A01CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA733A7-F210-4E1F-BE2E-9094780F3043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA733A7-F210-4E1F-BE2E-9094780F3043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA733A7-F210-4E1F-BE2E-9094780F3043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA733A7-F210-4E1F-BE2E-9094780F3043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8195FE8-CBB6-4400-982B-4FD703DF30D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8195FE8-CBB6-4400-982B-4FD703DF30D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8195FE8-CBB6-4400-982B-4FD703DF30D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8195FE8-CBB6-4400-982B-4FD703DF30D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -439,6 +463,10 @@ Global
 		{E49AED87-CECB-4C6A-99B9-80BD9945E224} = {8F86CDC2-2F31-4931-82BE-038566007DDC}
 		{28D5BFF3-B58E-43F7-9473-3D019E652308} = {8F86CDC2-2F31-4931-82BE-038566007DDC}
 		{5B119BF8-3B6D-4A1A-936B-75701813807D} = {8F86CDC2-2F31-4931-82BE-038566007DDC}
+		{B64718F1-F497-4AA9-B309-2423F162CB5B} = {64EF777C-CD67-473C-852B-57C920BBFC05}
+		{175DA10F-CD87-4249-B8F3-F18FB4A01CAD} = {315CCCAA-ECAD-4D96-9C9F-AB4602D97558}
+		{AAA733A7-F210-4E1F-BE2E-9094780F3043} = {1726BD0B-64BD-40F7-B961-B60E584129C2}
+		{B8195FE8-CBB6-4400-982B-4FD703DF30D3} = {23180AC6-768B-458A-9E3D-4800D0589812}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0CC055A-F21C-4231-A555-8CA71B48739E}

@@ -14,7 +14,27 @@
          */
         static void Main(string[] args)
         {
-            Console.WriteLine("Resolva...");
+            Console.WriteLine("Qual o salário mínimo");
+            var salarioMinimo = decimal.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Quantidade de quilowatts gasta");
+            var quilowattsGastos = decimal.Parse(Console.ReadLine());
+
+
+            // O valor em reais de cada quilowatt
+            var precoDeUmQuilowatt = (salarioMinimo / 7) / 100;
+            Console.WriteLine("O valor em reais de cada quilowatt: " + precoDeUmQuilowatt);
+
+            // O valor em reais a ser pago
+            var valorPago = quilowattsGastos * precoDeUmQuilowatt;
+            Console.WriteLine("O valor em reais a ser pago: " + valorPago);
+
+
+            // O novo valor a ser pago por essa residência com um desconto de 10%
+            var valorComDesconto = valorPago * 0.9m;
+            Console.WriteLine("O novo valor a ser pago por essa residência com um desconto de 10%: " + valorComDesconto);
+
         }
     }
 }
