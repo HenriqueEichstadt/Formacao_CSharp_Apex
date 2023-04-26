@@ -14,7 +14,18 @@
          */
         static void Main(string[] args)
         {
-            Console.WriteLine("Resolva...");
+            Console.Write("Digite o valor da aplicação mensal (P): ");
+            var p = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite a taxa de juros (i): ");
+            var i = double.Parse(Console.ReadLine()) / 100; //divide por 100 para transformar a taxa em decimal
+
+            Console.Write("Digite o número de meses (n): ");
+            var n = int.Parse(Console.ReadLine());
+
+            var valorAcumulado = p * ((Math.Pow(1 + i, n) - 1) / i);
+
+            Console.WriteLine("O valor acumulado na poupança programada é: " + valorAcumulado);
         }
     }
 }
