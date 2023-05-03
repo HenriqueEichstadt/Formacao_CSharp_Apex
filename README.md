@@ -114,3 +114,6 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 
 ## Aula - 26/04
 	- Capítulo 11 – Orientação à Objetos
+
+## Aula - 01/05
+	- Feriado
