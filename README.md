@@ -117,3 +117,7 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 
 ## Aula - 01/05
 	- Feriado
+
+## Aula - 04/05
+	- Métodos estáticos
+	- Exercícios
