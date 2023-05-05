@@ -2,6 +2,7 @@
 using System.Text.RegularExpressions;
 using System;
 using Capitulo11.OrientacaoObjetos.Interfaces;
+using Capitulo11.OrientacaoObjetos.Helpers;
 
 namespace Capitulo11.OrientacaoObjetos
 {
@@ -50,10 +51,18 @@ namespace Capitulo11.OrientacaoObjetos
             conta.Sacar(100);
 
 
-            var pessoa4 = new Aluno();
+            var aluno10 = new Aluno();
+            aluno10.Cpf = "kjashdjk";
+            aluno10.Dormir();
+
+            //aluno10.FormatarCpf();
+
+
+            var cpfFormatado = Helper.FormatarCpf("12345678900");
+
+            Console.WriteLine("CPF Formatado: " + cpfFormatado);
+
 
         }
-
-
     }
 }
