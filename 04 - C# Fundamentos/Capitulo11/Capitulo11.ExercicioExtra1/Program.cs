@@ -13,7 +13,22 @@
          */
         static void Main(string[] args)
         {
-            Console.WriteLine("Resolva...");
+            var retangulo2 = new Retangulo();
+            retangulo2.Base = 10;
+            retangulo2.Altura = 20;
+            retangulo2.CalcularArea();
+            retangulo2.CalcularPerimetro();
+
+            var circulo = new Circulo();
+            circulo.Diametro = 10;
+            circulo.CalcularArea();
+            circulo.CalcularPerimetro();
+
+
+            var triangulo = new Triangulo();
+            triangulo.Lado = 5;
+            triangulo.CalcularArea();
+            triangulo.CalcularPerimetro();
         }
     }
 }
