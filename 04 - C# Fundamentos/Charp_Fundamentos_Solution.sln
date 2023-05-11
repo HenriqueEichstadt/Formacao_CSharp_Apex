@@ -181,15 +181,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capítulo 14 - Arquivos de 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicios", "Exercicios", "{D7EF1C40-6143-4F95-A946-4236159B6466}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo13.TratamentoErros", "Capitulo13\Capitulo13.TratamentoErros\Capitulo13.TratamentoErros.csproj", "{430F0C80-B566-4261-B490-02CF79F9168C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo13.TratamentoErros", "Capitulo13\Capitulo13.TratamentoErros\Capitulo13.TratamentoErros.csproj", "{430F0C80-B566-4261-B490-02CF79F9168C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicios", "Exercicios", "{C9A2A315-B054-4A6B-A18F-CCB53F0F93DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo13.Exercicio1", "Capitulo13\Capitulo13.Exercicio1\Capitulo13.Exercicio1.csproj", "{9F7F2C37-82F0-42F9-8FA8-9F0FB9CC8781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo13.Exercicio1", "Capitulo13\Capitulo13.Exercicio1\Capitulo13.Exercicio1.csproj", "{9F7F2C37-82F0-42F9-8FA8-9F0FB9CC8781}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo14.Exercicio1", "Capitulo14\Capitulo14.Exercicio1\Capitulo14.Exercicio1.csproj", "{E4875C69-1DE8-49A5-875E-845E881FC3B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo14.Exercicio1", "Capitulo14\Capitulo14.Exercicio1\Capitulo14.Exercicio1.csproj", "{E4875C69-1DE8-49A5-875E-845E881FC3B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo14.ArquivosTexto", "Capitulo14\Capitulo14.ArquivosTexto\Capitulo14.ArquivosTexto.csproj", "{16AA8CFC-0203-4CD0-8E10-AA01BD09CDB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo14.ArquivosTexto", "Capitulo14\Capitulo14.ArquivosTexto\Capitulo14.ArquivosTexto.csproj", "{16AA8CFC-0203-4CD0-8E10-AA01BD09CDB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capitulo15-16-17 - Banco de Dados", "Capitulo15-16-17 - Banco de Dados", "{3DD917E6-ECD7-4B3B-98C6-24067B2CFDF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicios", "Exercicios", "{920E89FF-CFAB-4784-9EEE-4715A3B16516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo15_16_17.BancoDeDados", "Capitulo15-16-17\Capitulo15_16_17.BancoDeDados\Capitulo15_16_17.BancoDeDados.csproj", "{B47726A2-1046-43BC-808E-2A5CC5DFF352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo15-16-17.ExercicioExtra1", "Capitulo15-16-17\Capitulo15-16-17.ExercicioExtra1\Capitulo15-16-17.ExercicioExtra1.csproj", "{E57191C7-FD46-4CA6-AD17-A65FA619FB21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -481,6 +489,14 @@ Global
 		{16AA8CFC-0203-4CD0-8E10-AA01BD09CDB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16AA8CFC-0203-4CD0-8E10-AA01BD09CDB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16AA8CFC-0203-4CD0-8E10-AA01BD09CDB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B47726A2-1046-43BC-808E-2A5CC5DFF352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B47726A2-1046-43BC-808E-2A5CC5DFF352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B47726A2-1046-43BC-808E-2A5CC5DFF352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B47726A2-1046-43BC-808E-2A5CC5DFF352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E57191C7-FD46-4CA6-AD17-A65FA619FB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57191C7-FD46-4CA6-AD17-A65FA619FB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57191C7-FD46-4CA6-AD17-A65FA619FB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57191C7-FD46-4CA6-AD17-A65FA619FB21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -567,6 +583,9 @@ Global
 		{9F7F2C37-82F0-42F9-8FA8-9F0FB9CC8781} = {D7EF1C40-6143-4F95-A946-4236159B6466}
 		{E4875C69-1DE8-49A5-875E-845E881FC3B2} = {C9A2A315-B054-4A6B-A18F-CCB53F0F93DC}
 		{16AA8CFC-0203-4CD0-8E10-AA01BD09CDB8} = {D776DFC3-531A-407A-A657-1AC67C767D83}
+		{920E89FF-CFAB-4784-9EEE-4715A3B16516} = {3DD917E6-ECD7-4B3B-98C6-24067B2CFDF9}
+		{B47726A2-1046-43BC-808E-2A5CC5DFF352} = {3DD917E6-ECD7-4B3B-98C6-24067B2CFDF9}
+		{E57191C7-FD46-4CA6-AD17-A65FA619FB21} = {920E89FF-CFAB-4784-9EEE-4715A3B16516}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0CC055A-F21C-4231-A555-8CA71B48739E}
