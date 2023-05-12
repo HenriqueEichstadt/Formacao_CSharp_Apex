@@ -48,14 +48,17 @@ namespace Capitulo15_16_17.ExercicioExtra1
 		 */
         public static void Main(string[] args)
 		{
-			ProdutoRepositorio repo = new ProdutoRepositorio();
+			ProdutoRepositorio repositorio = new ProdutoRepositorio();
 
 
 
 			Produto produto = new Produto();
 			produto.Nome = "Coca-Cola";
+			produto.Marca = "Coca";
+			produto.PrecoCompra = 6.50;
+			produto.PrecoVenda = 9.90;
 
-			repo.Adicionar(produto);
+            repositorio.Adicionar(produto);
 
 
 
