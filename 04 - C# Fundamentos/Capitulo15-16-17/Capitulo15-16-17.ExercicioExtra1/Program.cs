@@ -1,4 +1,6 @@
-﻿namespace Capitulo15_16_17.ExercicioExtra1
+﻿using Capitulo15_16_17.ExercicioExtra1.Repositorios;
+
+namespace Capitulo15_16_17.ExercicioExtra1
 {
 	public class Program
 	{
@@ -16,13 +18,13 @@
 				Id INT IDENTITY(1, 1),
 				Nome VARCHAR(100),
 				Marca VARCHAR(75),
-				PrecoCompra DECIMAL(18, 2)
-				PrecoVenda DECIMAL(18, 2)		
+				PrecoCompra DECIMAL(18, 2),
+				PrecoVenda DECIMAL(18, 2),	
 				PRIMARY KEY(Id)
 			);
 
 
-		c) Crie uma classe 'Usuario' contendo as propriedades conforme as colunas da tabela 'Produtos'
+		c) Crie uma classe 'Produto' contendo as propriedades conforme as colunas da tabela 'Produtos'
 
 		D) Crie uma classe 'ProdutoRepositorio' contendo métodos para um CRUD completo de um produto.
 			
@@ -36,16 +38,29 @@
 			Portanto, dentro de 'ProdutoRepositorio' é necessário criar os seguintes métodos e implementálos:
 				
 				- public void Adicionar(Produto produto) {}
-				- public Produto Obter(int idProduto) {}
+				- public Produto ObterPorId(int idProduto) {}
 				- public List<Produto> ObterTodos() {}
 				- public void Atualizar(Produto produto) {}
-				- public void Deletar(Produto produto) {}
+				- public void Deletar(int idProduto) {}
 
 		E) No método 'Main', instancie o ProdutoRepositorio e chame os métodos implementados para testar sua implementação.
 		 */
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Resolva...");
+			ProdutoRepositorio repo = new ProdutoRepositorio();
+
+
+
+			Produto produto = new Produto();
+			produto.Nome = "Coca-Cola";
+
+			repo.Adicionar(produto);
+
+
+
+			//repo.Atualizar()
 		}
+
+		
 	}
 }
