@@ -128,4 +128,6 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 	- I/O em arquivos de texto
 
 ## Aula - 11/05
-	- Operações em banco de dados com C# 
+	- Operações em banco de dados com C#
+	- biblioteca:
+		- System.Data.SqlClient;
