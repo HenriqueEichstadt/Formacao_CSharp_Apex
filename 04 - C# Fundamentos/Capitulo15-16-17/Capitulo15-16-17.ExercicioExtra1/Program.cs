@@ -1,4 +1,5 @@
-﻿using Capitulo15_16_17.ExercicioExtra1.Repositorios;
+﻿using Capitulo15_16_17.ExercicioExtra1.Modelos;
+using Capitulo15_16_17.ExercicioExtra1.Repositorios;
 
 namespace Capitulo15_16_17.ExercicioExtra1
 {
