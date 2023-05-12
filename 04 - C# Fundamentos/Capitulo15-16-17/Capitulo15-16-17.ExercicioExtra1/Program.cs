@@ -5,12 +5,12 @@ namespace Capitulo15_16_17.ExercicioExtra1
 {
 	public class Program
 	{
-		/*
+        /*
 		Implemente o seguinte projeto com os requisitos a seguir.
 		
 		a) Crie o banco de dados chamado 'ProjetoExercicioExtra1' utilizando o comando abaixo:
 			
-			CREATE DATABASE Aula11052023;
+			CREATE DATABASE ExercicioProduto;
 
 		
 		b) Crie a tabela 'Produtos' utilizando o comando abaixo:
@@ -46,7 +46,7 @@ namespace Capitulo15_16_17.ExercicioExtra1
 
 		E) No método 'Main', instancie o ProdutoRepositorio e chame os métodos implementados para testar sua implementação.
 		 */
-		public static void Main(string[] args)
+        public static void Main(string[] args)
 		{
 			ProdutoRepositorio repo = new ProdutoRepositorio();
 
