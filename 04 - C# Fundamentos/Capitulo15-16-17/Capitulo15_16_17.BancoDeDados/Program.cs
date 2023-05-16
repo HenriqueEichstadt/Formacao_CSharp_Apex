@@ -33,7 +33,13 @@ namespace Capitulo15_16_17.BancoDeDados
         static void Main(string[] args)
 		{
             // buscar
-            //SelectNoBanco();
+            var usuariosBuscados = SelectNoBanco();
+
+            foreach (var usuario in usuariosBuscados)
+            {
+                Console.WriteLine($"Id: {usuario.Id}");
+            }
+
 
             // inserir
             /*var usuario = new Usuario();
@@ -159,10 +165,12 @@ namespace Capitulo15_16_17.BancoDeDados
         }
 
 
-		public static void SelectNoBanco()
+		public static List<Usuario> SelectNoBanco()
 		{
             var connectionString = "Server=HENRIQUEEICHSTA\\SQLEXPRESS;Database=Aula11052023;User Id=sa;Password=123456789;";
             SqlConnection conexao = new SqlConnection(connectionString);
+
+            var listaUsuariosParaRetornar = new List<Usuario>();
 
             try
             {
@@ -176,16 +184,17 @@ namespace Capitulo15_16_17.BancoDeDados
 
                 while (reader.Read())
                 {
-                    Console.WriteLine($"Id: {reader["Id"]}");
-                    Console.WriteLine($"Nome: {reader["Nome"]}");
-                    Console.WriteLine($"Idade: {reader["Idade"]}");
-                    Console.WriteLine($"Email: {reader["Email"]}");
+                    var novoUsuario = new Usuario();
+                    novoUsuario.Id = Convert.ToInt32(reader["Id"]);
+                    novoUsuario.Nome = Convert.ToString(reader["Nome"]);
+                    novoUsuario.Idade = Convert.ToInt32(reader["Idade"]);
+                    novoUsuario.Email = Convert.ToString(reader["Email"]);
 
-                    Console.WriteLine();
+                    listaUsuariosParaRetornar.Add(novoUsuario);
 
                 }
 
-
+                return listaUsuariosParaRetornar;
             }
             catch (Exception ex)
             {
@@ -195,6 +204,8 @@ namespace Capitulo15_16_17.BancoDeDados
             {
                 conexao.Close();
             }
+
+            return listaUsuariosParaRetornar;
         }
 	}
 }
