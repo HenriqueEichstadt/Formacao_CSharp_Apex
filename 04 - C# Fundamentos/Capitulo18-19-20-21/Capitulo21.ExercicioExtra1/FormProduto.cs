@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Capitulo21.ExercicioExtra1.Modelos;
+using Capitulo21.ExercicioExtra1.Repositorios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +19,8 @@ namespace Capitulo21.ExercicioExtra1
      */
     public partial class FormProduto : Form
     {
+        public ProdutoRepositorio repositorio = new ProdutoRepositorio();
+
         public FormProduto()
         {
             InitializeComponent();
@@ -24,7 +28,54 @@ namespace Capitulo21.ExercicioExtra1
 
         private void FormProduto_Load(object sender, EventArgs e)
         {
+            ObterProdutosEAdicionarNoGrid();
+        }
 
+        private void BotaoCadastrar_Click(object sender, EventArgs e)
+        {
+            var produtoParaAdicionar = new Produto();
+            produtoParaAdicionar.Nome = CampoNome.Text;
+            produtoParaAdicionar.Marca = CampoMarca.Text;
+            produtoParaAdicionar.PrecoCompra = Convert.ToDouble(CampoPrecoCompra.Text.Replace(".", ","));
+            produtoParaAdicionar.PrecoVenda = Convert.ToDouble(CampoPrecoVenda.Text.Replace(".", ","));
+
+            var linhasAfetadas = repositorio.Adicionar(produtoParaAdicionar);
+
+            if(linhasAfetadas > 0)
+            {
+                LimparCamposFormulario();
+                ObterProdutosEAdicionarNoGrid();
+                MessageBox.Show("Produto cadastrado com sucesso!");
+            }
+            else
+            {
+                MessageBox.Show("Erro ao cadastrar produto!");
+            }
+
+        }
+
+        private void ObterProdutosEAdicionarNoGrid()
+        {
+            var todosProdutos = repositorio.ObterTodos();
+
+            foreach (var produto in todosProdutos)
+            {
+                GridProdutos.Rows.Add(
+                    produto.Id,
+                    produto.Nome,
+                    produto.Marca,
+                    produto.PrecoCompra,
+                    produto.PrecoVenda
+                    );
+            }
+        }
+
+        private void LimparCamposFormulario()
+        {
+            CampoNome.Text = "";
+            CampoMarca.Text = "";
+            CampoPrecoCompra.Text = "";
+            CampoPrecoVenda.Text = "";
         }
     }
 }

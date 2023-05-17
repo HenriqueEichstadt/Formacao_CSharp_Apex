@@ -12,7 +12,7 @@ namespace Capitulo21.ExercicioExtra1.Repositorios
     {
         public const string ConnectionString = "Server=HENRIQUEEICHSTA\\SQLEXPRESS;Database=ExercicioProduto;User Id=sa;Password=123456789;";
 
-        public void Adicionar(Produto produto)
+        public int Adicionar(Produto produto)
         {
             SqlConnection conexao = new SqlConnection(ConnectionString);
 
@@ -31,7 +31,7 @@ namespace Capitulo21.ExercicioExtra1.Repositorios
 
                 var linhasAfetadas = comando.ExecuteNonQuery();
 
-                Console.WriteLine("Linhas afetadas: " + linhasAfetadas);
+                return linhasAfetadas;
 
             }
             catch (Exception ex)
@@ -42,9 +42,10 @@ namespace Capitulo21.ExercicioExtra1.Repositorios
             {
                 conexao.Close();
             }
+            return 0;
         }
 
-        public void Atualizar(Produto produto)
+        public int Atualizar(Produto produto)
         {
             SqlConnection conexao = new SqlConnection(ConnectionString);
 
@@ -68,7 +69,7 @@ namespace Capitulo21.ExercicioExtra1.Repositorios
 
                 var linhasAfetadas = comando.ExecuteNonQuery();
 
-                Console.WriteLine("Linhas afetadas: " + linhasAfetadas);
+                return linhasAfetadas;
 
             }
             catch (Exception ex)
@@ -79,6 +80,7 @@ namespace Capitulo21.ExercicioExtra1.Repositorios
             {
                 conexao.Close();
             }
+            return 0;
         }
 
         public Produto ObterPorId(int idProduto)
@@ -165,7 +167,7 @@ namespace Capitulo21.ExercicioExtra1.Repositorios
             return listaProdutosObtidos;
         }
 
-        public void Deletar(int idProduto)
+        public int Deletar(int idProduto)
         {
             SqlConnection conexao = new SqlConnection(ConnectionString);
 
@@ -181,7 +183,7 @@ namespace Capitulo21.ExercicioExtra1.Repositorios
 
                 var linhasAfetadas = comando.ExecuteNonQuery();
 
-                Console.WriteLine("Linhas afetadas: " + linhasAfetadas);
+                return linhasAfetadas;
 
             }
             catch (Exception ex)
@@ -192,6 +194,8 @@ namespace Capitulo21.ExercicioExtra1.Repositorios
             {
                 conexao.Close();
             }
+
+            return 0;
         }
     }
 }
