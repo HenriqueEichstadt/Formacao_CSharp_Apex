@@ -205,7 +205,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicios", "Exercicios", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo18_19_20_21.WindowsForms", "Capitulo18-19-20-21\Capitulo18_19_20_21.WindowsForms\Capitulo18_19_20_21.WindowsForms.csproj", "{1F4141F3-6680-4267-AB2E-DAEC10148FBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo21.Exercicio1", "Capitulo18-19-20-21\Capitulo21.Exercicio1\Capitulo21.Exercicio1.csproj", "{F16DC1E0-1852-40F3-A83B-20BE9BAFE29F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo21.Exercicio1", "Capitulo18-19-20-21\Capitulo21.Exercicio1\Capitulo21.Exercicio1.csproj", "{F16DC1E0-1852-40F3-A83B-20BE9BAFE29F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extras", "Extras", "{42627253-E2F9-45B7-9493-7F68B4D8A755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo21.ExercicioExtra1", "Capitulo18-19-20-21\Capitulo21.ExercicioExtra1\Capitulo21.ExercicioExtra1.csproj", "{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -513,6 +517,10 @@ Global
 		{F16DC1E0-1852-40F3-A83B-20BE9BAFE29F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F16DC1E0-1852-40F3-A83B-20BE9BAFE29F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F16DC1E0-1852-40F3-A83B-20BE9BAFE29F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -605,6 +613,8 @@ Global
 		{AEBF7581-37B6-4578-9436-794B38AF32E5} = {23305D2B-54AB-4565-AFDA-D5009A5189FB}
 		{1F4141F3-6680-4267-AB2E-DAEC10148FBC} = {23305D2B-54AB-4565-AFDA-D5009A5189FB}
 		{F16DC1E0-1852-40F3-A83B-20BE9BAFE29F} = {AEBF7581-37B6-4578-9436-794B38AF32E5}
+		{42627253-E2F9-45B7-9493-7F68B4D8A755} = {AEBF7581-37B6-4578-9436-794B38AF32E5}
+		{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E} = {42627253-E2F9-45B7-9493-7F68B4D8A755}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0CC055A-F21C-4231-A555-8CA71B48739E}
