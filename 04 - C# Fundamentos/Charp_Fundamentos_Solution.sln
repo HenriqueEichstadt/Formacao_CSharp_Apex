@@ -209,7 +209,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo21.Exercicio1", "Ca
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extras", "Extras", "{42627253-E2F9-45B7-9493-7F68B4D8A755}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo21.ExercicioExtra1", "Capitulo18-19-20-21\Capitulo21.ExercicioExtra1\Capitulo21.ExercicioExtra1.csproj", "{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capitulo21.ExercicioExtra1", "Capitulo18-19-20-21\Capitulo21.ExercicioExtra1\Capitulo21.ExercicioExtra1.csproj", "{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capitulo-22-23-24-25 - Formulários, Validações e Relatórios", "Capitulo-22-23-24-25 - Formulários, Validações e Relatórios", "{5158DAD9-D507-4EE6-8AA2-A779B75CAF6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo_22_23_24_25.Formularios_Validacoes", "Capitulo-22-23-24-25\Capitulo_22_23_24_25.Formularios_Validacoes\Capitulo_22_23_24_25.Formularios_Validacoes.csproj", "{C42AF6A8-2F25-4D4B-A870-03A6D9ECE48C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -521,6 +525,10 @@ Global
 		{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C42AF6A8-2F25-4D4B-A870-03A6D9ECE48C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C42AF6A8-2F25-4D4B-A870-03A6D9ECE48C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C42AF6A8-2F25-4D4B-A870-03A6D9ECE48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C42AF6A8-2F25-4D4B-A870-03A6D9ECE48C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -615,6 +623,7 @@ Global
 		{F16DC1E0-1852-40F3-A83B-20BE9BAFE29F} = {AEBF7581-37B6-4578-9436-794B38AF32E5}
 		{42627253-E2F9-45B7-9493-7F68B4D8A755} = {AEBF7581-37B6-4578-9436-794B38AF32E5}
 		{9A6D55E1-5F75-4A14-99DB-4E1B3F949F1E} = {42627253-E2F9-45B7-9493-7F68B4D8A755}
+		{C42AF6A8-2F25-4D4B-A870-03A6D9ECE48C} = {5158DAD9-D507-4EE6-8AA2-A779B75CAF6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0CC055A-F21C-4231-A555-8CA71B48739E}

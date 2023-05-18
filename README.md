@@ -134,3 +134,16 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 
 ## Aula - 16/05
 	- Interfaces gráficas com Windows Forms Application
+
+## Aula - 18/05
+	- Formulários
+	- Validações de formulário
+
+
+
+
+
+
+
+
+
