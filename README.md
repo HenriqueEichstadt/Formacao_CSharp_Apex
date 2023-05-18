@@ -138,6 +138,11 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 ## Aula - 18/05
 	- Formulários
 	- Validações de formulário
+	- ferramentas para diagramas
+		- www.lucidchart.com
+		- draw.io 
+	- prototipação de telas
+		- figma
 
 
 

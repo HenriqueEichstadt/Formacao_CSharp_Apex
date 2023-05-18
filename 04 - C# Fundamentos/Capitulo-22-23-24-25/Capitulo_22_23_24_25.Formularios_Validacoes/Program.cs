@@ -11,7 +11,7 @@ namespace Capitulo_22_23_24_25.Formularios_Validacoes
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new TelaPrincipal());
         }
     }
 }
