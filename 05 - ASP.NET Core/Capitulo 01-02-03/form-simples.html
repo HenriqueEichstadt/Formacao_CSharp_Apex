@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exemplo tag input</title>
+  </head>
+  <body>
+    <form action="salvar" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <input type="hidden" name="codigo" /><br />
+        <label>Nome</label><br />
+        <input type="text" /><br />
+        <label>Email</label><br />
+        <input type="email" /><br />
+        <label>Telefone</label><br />
+        <input type="tel" /><br />
+        <label>Idade</label><br />
+        <input type="number" /><br />
+        <label>Senha</label><br />
+        <input type="password" required /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Benefícios</legend>
+        <label> <input type="checkbox" />Unimed</label><br />
+        <label><input type="checkbox" />Uniodonto</label><br />
+      </fieldset>
+      <fieldset>
+        <legend>Alimentação</legend>
+        <label> <input type="radio" name="alimentacao" />Cartão Refeição</label
+        ><br />
+        <label
+          ><input type="radio" name="alimentacao" />Cartão Alimentação</label
+        ><br />
+      </fieldset>
+    </form>
+  </body>
+</html>
