@@ -1,0 +1,22 @@
+
+.meuBotao {
+    width: 50%;
+    height: 50px;
+    background-color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+}
+
+#id-enviar {
+    width: 30%;
+}
+
+
+button {
+    color: white;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0d0d70;
+}
