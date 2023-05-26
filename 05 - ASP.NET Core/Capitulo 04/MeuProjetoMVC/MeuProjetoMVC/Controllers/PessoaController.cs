@@ -24,7 +24,7 @@ namespace MeuProjetoMVC.Controllers
             return View();
         }
 
-        // Método chamado ao carregar a página "Pessoa/Edicao/id"
+        // Método chamado ao carregar a página "Pessoa/Edicao/1"
         public IActionResult Edicao(int id)
         {
             var pessoa = Pessoas.Where(p => p.Id == id).FirstOrDefault();
@@ -46,7 +46,7 @@ namespace MeuProjetoMVC.Controllers
             }
         }
 
-        public ActionResult Editar(Pessoa pessoa)
+        public IActionResult Editar(Pessoa pessoa)
         {
             if (pessoa.EstaValidoParaSalvar(ModelState))
             {
@@ -57,6 +57,13 @@ namespace MeuProjetoMVC.Controllers
             }
 
             return View("Edicao", pessoa);
+        }
+
+        public IActionResult Excluir(int id)
+        {
+            var pessoa = Pessoas.Where(p => p.Id == id).First();
+            Pessoas.Remove(pessoa);
+            return RedirectToAction("Listagem");
         }
     }
 }
