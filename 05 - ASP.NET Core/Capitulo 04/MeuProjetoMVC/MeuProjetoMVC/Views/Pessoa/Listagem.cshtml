@@ -1,0 +1,43 @@
+﻿<div class="container mt-4">
+    <h2 style="text-align: center;">Listagem de pessoas</h2>
+
+    <!-- Botão de Adicionar Novo Registro -->
+    <a href="/Pessoa/Cadastro" class="btn btn-success">
+        <i class="fa fa-plus"></i> Adicionar Novo Registro
+    </a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Ações</th>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop pelos registros -->
+            @foreach (var registro in Model)
+            {
+                <tr>
+                    <td>
+                        <!-- Botão de Edição -->
+                        <a class="btn btn-primary btn-sm" href="/Pessoa/Edicao/@registro.Id">
+                            <i class="fa fa-edit"></i> Editar
+                        </a>
+
+                        <!-- Botão de Exclusão -->
+                        <a class="btn btn-danger btn-sm" href="/Pessoa/Excluir/@registro.Id">
+                            <i class="fa fa-trash"></i> Excluir
+                        </a>
+                    </td>
+                    <td>@registro.Id</td>
+                    <td>@registro.Nome</td>
+                    <td>@registro.Cpf</td>
+                    <td>@registro.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
