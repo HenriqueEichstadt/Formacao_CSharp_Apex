@@ -152,7 +152,11 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 ## Aula - 25/05
 
 
-
-
+## Aula - 29/05
+	- plugins nuget para utilização do EntityFramework Core
+		- Microsoft.EntityFrameworkCore
+		- Microsoft.EntityFrameworkCore.Design
+		- Microsoft.EntityFrameworkCore.SqlServer
+		- Microsoft.EntityFrameworkCore.Tools
 
 
