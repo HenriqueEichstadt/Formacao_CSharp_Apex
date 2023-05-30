@@ -8,6 +8,12 @@ namespace MeuProjetoMVC.BancoDeDados.Contexto
     {
         public DbSet<Pessoa> Pessoas { get; set; }
 
+        public BancoDeDadosContext()
+        {
+            // Cria o banco e as tabelas em sistemas pequenos
+            //Database.EnsureCreated();
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

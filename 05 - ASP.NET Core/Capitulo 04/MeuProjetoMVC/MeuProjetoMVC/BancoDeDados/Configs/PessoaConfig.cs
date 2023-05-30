@@ -24,7 +24,8 @@ namespace MeuProjetoMVC.BancoDeDados.Configs
                 .IsRequired()
                 .HasMaxLength(14);
 
-
+            builder.Property(x => x.Telefone)
+                .HasMaxLength(30);
         }
     }
 }
