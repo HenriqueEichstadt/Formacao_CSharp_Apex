@@ -1,4 +1,7 @@
-﻿namespace ExercicioExtra1
+﻿using ExercicioExtra1.BancoDados.Repositorio;
+using ExercicioExtra1.Entidades;
+
+namespace ExercicioExtra1
 {
     /*
     Exercício 1 de Programação em C#: Entity Framework Core e CRUD:
@@ -36,7 +39,41 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Resolva...");
+            // instanciando o repositório
+            var repositorioProduto = new ProdutoRepositorio();
+
+            // adicionando
+            var novoProduto = new Produto();
+            novoProduto.Nome = "Sal rosa do Himalaia";
+            novoProduto.PrecoCompra = 10;
+            novoProduto.PrecoVenda = 100;
+            novoProduto.DataValidade = new DateTime(2024, 07, 25);
+            novoProduto.QuantidadeEstoque = 100;
+
+            //repositorioProduto.Adicionar(novoProduto);
+
+
+            // atualizar
+            var produto = new Produto();
+            produto.Id = 1;
+            produto.Nome = "Sal rosa do Himalaia";
+            produto.PrecoCompra = 20;
+            produto.PrecoVenda = 100;
+            produto.DataValidade = new DateTime(2024, 07, 25);
+            produto.QuantidadeEstoque = 500;
+
+            //repositorioProduto.Atualizar(produto);
+
+            // obtendo
+            var produtos = repositorioProduto.ObterTodos();
+
+            foreach(var prod in produtos)
+            {
+                Console.WriteLine($"Id: {prod.Id} Nome: {prod.Nome}");
+            }
+
+
+            Console.ReadKey();
         }
     }
 }
