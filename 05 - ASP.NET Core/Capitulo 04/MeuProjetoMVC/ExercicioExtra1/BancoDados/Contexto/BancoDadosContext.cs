@@ -1,17 +1,14 @@
 ﻿using ExercicioExtra1.BancoDados.Configs;
 using ExercicioExtra1.Entidades;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExercicioExtra1.BancoDados.Contexto
 {
     internal class BancoDadosContext : DbContext
     {
         public DbSet<Produto> Produtos { get;set; }
+        public DbSet<Pessoa> Pessoas { get;set; }
+        public DbSet<Endereco> Enderecos { get;set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -26,6 +23,8 @@ namespace ExercicioExtra1.BancoDados.Contexto
         {
             // importart as configs
             modelBuilder.ApplyConfiguration(new ProdutoConfig());
+            modelBuilder.ApplyConfiguration(new PessoaConfig());
+            modelBuilder.ApplyConfiguration(new EnderecoConfig());
         }
     }
 }

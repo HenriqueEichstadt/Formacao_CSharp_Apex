@@ -44,13 +44,13 @@ namespace ExercicioExtra1
 
             // adicionando
             var novoProduto = new Produto();
-            novoProduto.Nome = "Sal rosa do Himalaia";
+            novoProduto.Nome = "Coca-Cola";
             novoProduto.PrecoCompra = 10;
             novoProduto.PrecoVenda = 100;
             novoProduto.DataValidade = new DateTime(2024, 07, 25);
             novoProduto.QuantidadeEstoque = 100;
 
-            //repositorioProduto.Adicionar(novoProduto);
+            repositorioProduto.Adicionar(novoProduto);
 
 
             // atualizar
@@ -72,6 +72,31 @@ namespace ExercicioExtra1
                 Console.WriteLine($"Id: {prod.Id} Nome: {prod.Nome}");
             }
 
+
+            // adiciondo pessoa com endereço
+
+            var endereco = new Endereco();
+            endereco.Rua = "Centro";
+            endereco.Cep = "4546546";
+            endereco.Complemento = "Apto 999";
+            endereco.Numero = 10;
+
+            var pessoa = new Pessoa();
+            pessoa.Nome = "Jão";
+            pessoa.Cpf = "000.000.000-00";
+            pessoa.Email = "email@email.com";
+            pessoa.Telefone = "4799999999";
+            pessoa.Endereco = endereco;
+
+            var repositorioDePessoa = new PessoaRepositorio();
+
+            //repositorioDePessoa.Adicionar(pessoa);
+
+            Console.WriteLine("Id da pessoa: " + pessoa.Id);
+            Console.WriteLine($"Rua: {pessoa.Endereco.Rua}");
+            Console.WriteLine($"Cep: {pessoa.Endereco.Cep}");
+            Console.WriteLine($"Complemento: {pessoa.Endereco.Complemento}");
+            Console.WriteLine($"Numero: {pessoa.Endereco.Numero}");
 
             Console.ReadKey();
         }
