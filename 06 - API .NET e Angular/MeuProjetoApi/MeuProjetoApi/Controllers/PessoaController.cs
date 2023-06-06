@@ -7,31 +7,54 @@ namespace MeuProjetoApi.Controllers
     [ApiController]
     public class PessoaController : ControllerBase
     {
-        public static List<Pessoa> ListaPessoas = new List<Pessoa>() 
+        public static List<Pessoa> ListaPessoas = new List<Pessoa>()
         {
             new Pessoa() { Id = 1, Nome = "Zé", Cpf = "000.000.000-00", Email = "ze@gmail.com", Telefone = "(47) 99874-5632" },
         };
 
 
         [HttpGet]
-        [Route("pessoa/obter")]
-        [ProducesResponseType(typeof(Pessoa), (int)HttpStatusCode.OK)]
+        [Route("pessoa/obterTodos")]
+        [ProducesResponseType(typeof(List<Pessoa>), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
-        public IActionResult Obter()
+        public IActionResult ObterTodos()
         {
             try
             {
-                var pessoa = new Pessoa();
-                pessoa.Id = 1;
-                pessoa.Nome = "Zé";
-                pessoa.Cpf = "000.000.000-00";
-                pessoa.Email = "ze@gmail.com";
-                pessoa.Telefone = "(47) 99874-5632";
+                return Ok(ListaPessoas);
 
-                return Ok(pessoa);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro na API: {ex.Message} - {ex.StackTrace}");
+            }
+        }
 
-            } catch (Exception ex)
+        [HttpGet]
+        [Route("pessoa/obterPorId/{id}")]
+        [ProducesResponseType(typeof(Pessoa), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
+        public IActionResult ObterPorId(int id)
+        {
+            try
+            {
+                var pessoa = ListaPessoas
+                    .Where(pessoa => pessoa.Id == id)
+                    .FirstOrDefault();
+
+                if(pessoa == null)
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    return Ok(pessoa);
+                }
+            }
+            catch (Exception ex)
             {
                 return BadRequest($"Erro na API: {ex.Message} - {ex.StackTrace}");
             }
@@ -42,12 +65,23 @@ namespace MeuProjetoApi.Controllers
         [ProducesResponseType(typeof(Pessoa), (int)HttpStatusCode.Created)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
-        public IActionResult Adicionar()
+        public IActionResult Adicionar([FromBody] Pessoa pessoa)
         {
-            return Created(null);
+            try
+            {
+                if (pessoa == null)
+                {
+                    return BadRequest("Não foi possível obter a pessoa");
+                }
+
+                ListaPessoas.Add(pessoa);
+
+                return Created("", pessoa);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro na API: {ex.Message} - {ex.StackTrace}");
+            }
         }
-
-
-
     }
 }
