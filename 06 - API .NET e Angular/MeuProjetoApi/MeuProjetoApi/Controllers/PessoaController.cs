@@ -16,7 +16,7 @@ namespace MeuProjetoApi.Controllers
         [HttpGet]
         [Route("pessoa/obter")]
         [ProducesResponseType(typeof(Pessoa), (int)HttpStatusCode.OK)]
-        [ProducesResponseType(typeof(Nullable), (int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
         public IActionResult Obter()
         {
@@ -40,7 +40,7 @@ namespace MeuProjetoApi.Controllers
         [HttpPost]
         [Route("pessoa/adicionar")]
         [ProducesResponseType(typeof(Pessoa), (int)HttpStatusCode.Created)]
-        [ProducesResponseType(typeof(Nullable), (int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
         public IActionResult Adicionar()
         {
