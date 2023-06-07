@@ -12,7 +12,6 @@ namespace MeuProjetoApi.Controllers
             new Pessoa() { Id = 1, Nome = "Zé", Cpf = "000.000.000-00", Email = "ze@gmail.com", Telefone = "(47) 99874-5632" },
         };
 
-
         [HttpGet]
         [Route("pessoa/obterTodos")]
         [ProducesResponseType(typeof(List<Pessoa>), (int)HttpStatusCode.OK)]
@@ -118,9 +117,35 @@ namespace MeuProjetoApi.Controllers
             {
                 return BadRequest($"Erro na API: {ex.Message} - {ex.StackTrace}");
             }
+        }
 
+        [HttpDelete]
+        [Route("pessoa/excluir/{id}")] //www.com/pessoa/excluir/1
+        [ProducesResponseType(typeof(Nullable), (int)HttpStatusCode.NoContent)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
+        public IActionResult Excluir(int id)
+        {
+            try
+            {
+                var pessoa = ListaPessoas
+                    .Where(p => p.Id == id)
+                    .FirstOrDefault();
 
+                if(pessoa == null)
+                {
+                    return NotFound("Pessoa não encontrada");
+                }
 
+                ListaPessoas.Remove(pessoa);
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro na API: {ex.Message} - {ex.StackTrace}");
+            }
         }
     }
 }
