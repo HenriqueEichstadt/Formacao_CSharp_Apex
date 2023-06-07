@@ -83,5 +83,44 @@ namespace MeuProjetoApi.Controllers
                 return BadRequest($"Erro na API: {ex.Message} - {ex.StackTrace}");
             }
         }
+
+        [HttpPut]
+        [Route("pessoa/atualizar")]
+        [ProducesResponseType(typeof(Pessoa), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
+        public IActionResult Atualizar([FromBody] Pessoa pessoa)
+        {
+            try
+            {
+                Pessoa pessoaAtualizar = ListaPessoas
+                    .Where(p => p.Id == pessoa.Id)
+                    .FirstOrDefault();
+
+                if (pessoaAtualizar == null)
+                {
+                    return NotFound("Não foi possível encontrar a pessoa");
+                }
+                else
+                {
+                    //pessoaAtualizar.Id = 1;
+                    pessoaAtualizar.Nome = pessoa.Nome;
+                    pessoaAtualizar.Cpf = pessoa.Cpf;
+                    pessoaAtualizar.Email = pessoa.Email;
+                    pessoaAtualizar.Telefone = pessoa.Telefone;
+
+                    return Ok(pessoaAtualizar);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro na API: {ex.Message} - {ex.StackTrace}");
+            }
+
+
+
+        }
     }
 }
