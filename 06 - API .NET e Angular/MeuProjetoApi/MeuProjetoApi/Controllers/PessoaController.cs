@@ -1,4 +1,6 @@
-﻿using MeuProjetoApi.Models;
+﻿using MeuProjetoApi.BancoDados.Contexto;
+using MeuProjetoApi.BancoDados.Repositorios;
+using MeuProjetoApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -7,10 +9,7 @@ namespace MeuProjetoApi.Controllers
     [ApiController]
     public class PessoaController : ControllerBase
     {
-        public static List<Pessoa> ListaPessoas = new List<Pessoa>()
-        {
-            new Pessoa() { Id = 1, Nome = "Zé", Cpf = "000.000.000-00", Email = "ze@gmail.com", Telefone = "(47) 99874-5632" },
-        };
+        public PessoaRepositorio Repositorio = new PessoaRepositorio();
 
         [HttpGet]
         [Route("pessoa/obterTodos")]
@@ -21,8 +20,8 @@ namespace MeuProjetoApi.Controllers
         {
             try
             {
-                return Ok(ListaPessoas);
-
+                var todasPessoas = Repositorio.ObterTodos();
+                return Ok(todasPessoas);
             }
             catch (Exception ex)
             {
@@ -40,9 +39,7 @@ namespace MeuProjetoApi.Controllers
         {
             try
             {
-                var pessoa = ListaPessoas
-                    .Where(pessoa => pessoa.Id == id)
-                    .FirstOrDefault();
+                var pessoa = Repositorio.ObterPorId(id);
 
                 if(pessoa == null)
                 {
@@ -73,9 +70,9 @@ namespace MeuProjetoApi.Controllers
                     return BadRequest("Não foi possível obter a pessoa");
                 }
 
-                ListaPessoas.Add(pessoa);
+                Repositorio.Adicionar(pessoa);
 
-                return Created("", pessoa);
+                return Created($"", pessoa);
             }
             catch (Exception ex)
             {
@@ -93,9 +90,7 @@ namespace MeuProjetoApi.Controllers
         {
             try
             {
-                Pessoa pessoaAtualizar = ListaPessoas
-                    .Where(p => p.Id == pessoa.Id)
-                    .FirstOrDefault();
+                Pessoa pessoaAtualizar = Repositorio.ObterPorId(pessoa.Id);
 
                 if (pessoaAtualizar == null)
                 {
@@ -109,8 +104,8 @@ namespace MeuProjetoApi.Controllers
                     pessoaAtualizar.Email = pessoa.Email;
                     pessoaAtualizar.Telefone = pessoa.Telefone;
 
+                    Repositorio.Atualizar(pessoaAtualizar);
                     return Ok(pessoaAtualizar);
-
                 }
             }
             catch (Exception ex)
@@ -129,17 +124,14 @@ namespace MeuProjetoApi.Controllers
         {
             try
             {
-                var pessoa = ListaPessoas
-                    .Where(p => p.Id == id)
-                    .FirstOrDefault();
+                var pessoa = Repositorio.ObterPorId(id);
 
                 if(pessoa == null)
                 {
                     return NotFound("Pessoa não encontrada");
                 }
 
-                ListaPessoas.Remove(pessoa);
-
+                Repositorio.Excluir(id);
                 return NoContent();
             }
             catch (Exception ex)
