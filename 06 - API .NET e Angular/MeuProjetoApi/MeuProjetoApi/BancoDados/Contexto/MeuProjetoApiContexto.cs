@@ -1,4 +1,5 @@
-﻿using MeuProjetoApi.Models;
+﻿using MeuProjetoApi.BancoDados.Configs;
+using MeuProjetoApi.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace MeuProjetoApi.BancoDados.Contexto
