@@ -2,6 +2,7 @@
 using MeuProjetoApi.BancoDados.Repositorios;
 using MeuProjetoApi.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System.Net;
 
 namespace MeuProjetoApi.Controllers
@@ -41,7 +42,7 @@ namespace MeuProjetoApi.Controllers
             {
                 var pessoa = Repositorio.ObterPorId(id);
 
-                if(pessoa == null)
+                if (pessoa == null)
                 {
                     return NotFound();
                 }
@@ -126,7 +127,7 @@ namespace MeuProjetoApi.Controllers
             {
                 var pessoa = Repositorio.ObterPorId(id);
 
-                if(pessoa == null)
+                if (pessoa == null)
                 {
                     return NotFound("Pessoa não encontrada");
                 }
@@ -138,6 +139,44 @@ namespace MeuProjetoApi.Controllers
             {
                 return BadRequest($"Erro na API: {ex.Message} - {ex.StackTrace}");
             }
+        }
+
+        [HttpPost]
+        [Route("pessoa/buscacep/{cep}")]
+        public async Task<IActionResult> BuscaCep(string cep)
+        {
+            try
+            {
+                using (var httpClient = new HttpClient() { Timeout = TimeSpan.FromSeconds(30) })
+                {
+                    using (var message = new HttpRequestMessage())
+                    {
+                        message.RequestUri = new Uri($"https://viacep.com.br/ws/{cep}/json");
+                        message.Method = new HttpMethod("get");
+
+                        var response = await httpClient.SendAsync(message);
+
+                        if (!response.IsSuccessStatusCode)
+                        {
+                            return NotFound("Não foi possível encontrar os dados com o CEP informado");
+                        }
+
+                        var jsonRetorno = await response.Content.ReadAsStringAsync();
+
+                        
+                        var objetoViaCep = JsonConvert.DeserializeObject<ViaCep>(jsonRetorno);
+
+
+                        return Ok(objetoViaCep);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro na API: {ex.Message} - {ex.StackTrace}");
+            }
+
         }
     }
 }
