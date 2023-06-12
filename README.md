@@ -192,4 +192,13 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 	Criando novo projeto angular:
 		Linha de comando: ng new NOME_DO_PROJETO
 	
-	
+	Extensões para Angular no Visual Studio Code
+		- Angular Extension Pack
+		- Angular File Changer (Supporting Touch Bar and 
+		- Angular Files
+		- Angular Language Service
+		- Angular Material 2, Flex layout 1, Covalent 1 & 
+		- Angular Schematics
+		- Angular Snippets (Version 13)
+
+
