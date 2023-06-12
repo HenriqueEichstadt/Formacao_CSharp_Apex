@@ -159,4 +159,37 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 		- Microsoft.EntityFrameworkCore.SqlServer
 		- Microsoft.EntityFrameworkCore.Tools
 
+## Aula - 31/05
 
+## Aula - 05/06
+
+## Aula - 07/06
+
+## Aula - 12/06
+	Preparandoa ambiente Angular:
+		- Node.js
+			- Site oficial: https://nodejs.org/en
+			- Versão 16.20.0: https://nodejs.org/dist/v16.20.0/node-v16.20.0-x64.msi
+			- Comando para verificar se foi instalado com sucesso: node -v
+		
+		- npm -> Node Package Manager
+			- Site onde é possível consultar os pacotes disponíveis: https://www.npmjs.com/
+				npm install -g npm@9.6.5
+			- Comando para verificar se foi instalado com sucesso: npm -v
+
+		- TypeScript
+			- Site oficial: https://www.typescriptlang.org/
+			- Instalando versão 5.4.0 via linha de comando: 
+				npm i -g typescript@5.0.4
+			- Comando para verificar se foi instalado com sucesso: tsc -v
+		
+		- Angular
+			- Site oficial: https://angular.io/
+			- Instalando versão 14.2.10 via linha de comando: 
+				npm install -g @angular/cli@14.2.10
+			- Comando para verificar se foi instalado com sucesso: ng version
+			
+	Criando novo projeto angular:
+		Linha de comando: ng new NOME_DO_PROJETO
+	
+	
