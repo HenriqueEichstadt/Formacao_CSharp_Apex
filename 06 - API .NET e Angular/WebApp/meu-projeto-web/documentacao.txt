@@ -7,7 +7,7 @@ Rodar projematTooltip
 Criar novo componenmatTabLabel
 
   Opção 1
-    ng g component NOME_COMPONE
+    ng g component NOME_COMPONENTE
 
   Opção 2
-    ng g c NOME_COMPONE
+    ng g c NOME_COMPONENTE
