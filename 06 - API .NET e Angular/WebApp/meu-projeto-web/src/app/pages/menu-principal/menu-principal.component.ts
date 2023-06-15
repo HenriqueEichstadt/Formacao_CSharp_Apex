@@ -14,7 +14,7 @@ export class MenuPrincipalComponent implements OnInit, OnDestroy {
 
   // métodos
   public ngOnInit(): void {
-
+    document.title = 'Menu principal';
   }
 
   public ngOnDestroy(): void {
