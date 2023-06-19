@@ -2,7 +2,9 @@
 <div class="container-fluid">
   <h2 class="centralizar-texto">Listagem de pessoas</h2>
 
-  <a class="btn btn-success float-right" style="margin-bottom: 10px;" [routerLink]="['/pessoa/cadastro']" queryParamsHandling="preserve">Adicionar</a>
+  <div class="container-fluid d-flex justify-content-end">
+    <a class="btn btn-success" style="margin-bottom: 10px;" [routerLink]="['/pessoa/cadastro']" queryParamsHandling="preserve">Adicionar</a>
+  </div>
 
   <div class="table-responsive">
     <table class="table">
