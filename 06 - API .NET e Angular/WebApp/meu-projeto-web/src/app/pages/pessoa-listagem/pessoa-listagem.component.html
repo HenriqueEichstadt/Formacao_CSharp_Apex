@@ -1,8 +1,52 @@
 
+<div class="container-fluid">
+  <h2 class="centralizar-texto">Listagem de pessoas</h2>
 
-<div *ngFor="let pessoa of this.mockPessoas">
-  <p>{{pessoa.nome}}</p>
-  <br>
+  <a class="btn btn-success float-right" style="margin-bottom: 10px;" [routerLink]="['/pessoa/cadastro']" queryParamsHandling="preserve">Adicionar</a>
+
+  <div class="table-responsive">
+    <table class="table">
+
+      <thead>
+        <tr>
+          <th>Ações</th>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>CPF</th>
+          <th>Telefone</th>
+          <th>E-mail</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let pessoa of this.mockPessoas">
+          <td>
+            <!-- Botão de Edição -->
+            <a class="btn btn-primary btn-sm" style="margin-right: 5px;">Editar</a>
+
+            <!-- Botão de Exclusão -->
+            <a class="btn btn-danger btn-sm" style="margin-right: 5px;">Excluir</a>
+        </td>
+          <td>{{pessoa.id}}</td>
+          <td>{{pessoa.nome}}</td>
+          <td>{{pessoa.cpf}}</td>
+          <td>{{pessoa.telefone}}</td>
+          <td>{{pessoa.email}}</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+  </div>
+
+
+
+
+
+
+
 </div>
+
 
 

@@ -18,7 +18,7 @@ import { PessoaCadastroComponent } from './pages/pessoa-cadastro/pessoa-cadastro
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
