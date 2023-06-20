@@ -1,1 +1,23 @@
-<p>pessoa-cadastro works!</p>
+
+<div class="container">
+  <h2 class="centralizar-texto">Cadastro de pessoa</h2>
+
+  <form [formGroup]="this.formulario" (ngSubmit)="this.submeterForm()" novalidate [ngClass]="{'submitted': this.formSubmetido}">
+    <div class="row">
+
+      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+        <label class="form-control-label label-obrigatorio">Nome</label>
+        <input type="text" class="form-control" placeholder="Preencha um nome" formControlName="nome">
+        <validator [formSubmitted]="this.formSubmetido" [errors]="this.formulario?.get('nome')?.errors"></validator>
+      </div>
+
+      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+        <label class="form-control-label label-obrigatorio">CPF</label>
+        <input type="text" class="form-control" placeholder="Preencha um CPF" formControlName="cpf">
+        <validator [formSubmitted]="this.formSubmetido" [errors]="this.formulario?.get('cpf')?.errors"></validator>
+      </div>
+
+    </div>
+  </form>
+
+</div>

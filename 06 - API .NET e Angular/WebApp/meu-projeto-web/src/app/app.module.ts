@@ -7,6 +7,11 @@ import { MenuPrincipalComponent } from './pages/menu-principal/menu-principal.co
 import { BarraSuperiorComponent } from './components/barra-superior/barra-superior.component';
 import { PessoaListagemComponent } from './pages/pessoa-listagem/pessoa-listagem.component';
 import { PessoaCadastroComponent } from './pages/pessoa-cadastro/pessoa-cadastro.component';
+import { CommonModule } from '@angular/common';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ValidatorComponent } from './components/validator/validator.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +19,18 @@ import { PessoaCadastroComponent } from './pages/pessoa-cadastro/pessoa-cadastro
     MenuPrincipalComponent,
     BarraSuperiorComponent,
     PessoaListagemComponent,
-    PessoaCadastroComponent
+    PessoaCadastroComponent,
+    ValidatorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CommonModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
