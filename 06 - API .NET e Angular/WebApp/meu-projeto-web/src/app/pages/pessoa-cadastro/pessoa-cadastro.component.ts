@@ -21,7 +21,16 @@ export class PessoaCadastroComponent implements OnInit {
   }
 
   public submeterForm(): void {
+    this.formSubmetido = true;
 
+    if(this.formulario.invalid) {
+      return;
+    }
+
+    let jsonTexto = JSON.stringify(this.formulario.getRawValue());
+    alert(jsonTexto);
+
+    // chamar a API e pedir para ela cadastrar a pessoa
   }
 
   private inicializarConfigForm(): void {
