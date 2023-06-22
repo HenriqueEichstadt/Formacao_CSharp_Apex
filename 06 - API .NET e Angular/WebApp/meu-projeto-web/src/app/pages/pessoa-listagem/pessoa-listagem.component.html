@@ -22,13 +22,13 @@
 
       <tbody>
 
-        <tr *ngFor="let pessoa of this.mockPessoas">
+        <tr *ngFor="let pessoa of this.listaPessoas">
           <td>
             <!-- Botão de Edição -->
-            <a class="btn btn-primary btn-sm" style="margin-right: 5px;">Editar</a>
+            <a class="btn btn-primary btn-sm" style="margin-right: 5px;" [routerLink]="['/pessoa/cadastro/', pessoa.id]">Editar</a>
 
             <!-- Botão de Exclusão -->
-            <a class="btn btn-danger btn-sm" style="margin-right: 5px;">Excluir</a>
+            <a class="btn btn-danger btn-sm" style="margin-right: 5px;" (click)="this.excluir(pessoa.id)">Excluir</a>
         </td>
           <td>{{pessoa.id}}</td>
           <td>{{pessoa.nome}}</td>

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import Pessoa from 'src/app/models/pessoa.model';
+import { PessoaService } from 'src/app/services/pessoa.service';
 
 @Component({
   selector: 'app-pessoa-cadastro',
@@ -10,13 +13,25 @@ export class PessoaCadastroComponent implements OnInit {
 
   public formulario: FormGroup;
   public formSubmetido: boolean = false;
+  public id: number = null;
 
   constructor(
     public formBuilder: FormBuilder,
+    public router: Router,
+    public activatedRoute: ActivatedRoute,
+    public pessoaService: PessoaService
   ) { }
 
   public ngOnInit(): void {
-    document.title = 'Cadastro de pessoa';
+    this.id = this.activatedRoute.snapshot.params['id'];
+
+    if(this.id == null) {
+      document.title = 'Cadastro de pessoa';
+    } else {
+      document.title = 'Edição de pessoa';
+      this.chamarApiParaObterPessoaPorId(this.id);
+    }
+
     this.inicializarConfigForm();
   }
 
@@ -27,10 +42,14 @@ export class PessoaCadastroComponent implements OnInit {
       return;
     }
 
-    let jsonTexto = JSON.stringify(this.formulario.getRawValue());
-    alert(jsonTexto);
+    let pessoa: Pessoa = new Pessoa(this.formulario.getRawValue());
 
-    // chamar a API e pedir para ela cadastrar a pessoa
+    if(this.id == null) {
+      this.chamarApiParaAdicionar(pessoa);
+    } else {
+      this.chamarApiParaAtualizar(pessoa);
+    }
+
   }
 
   private inicializarConfigForm(): void {
@@ -40,6 +59,42 @@ export class PessoaCadastroComponent implements OnInit {
       cpf: [null, [Validators.required, Validators.maxLength(14)]],
       email: [null, [Validators.email]],
       telefone: [null, [Validators.maxLength(30)]],
+    });
+  }
+
+  public chamarApiParaAdicionar(pessoa: Pessoa): void {
+    this.pessoaService.adicionar(pessoa).subscribe(resposta => {
+
+      if(resposta != null) {
+        alert('Pessoa cadastrada com sucesso!');
+        this.router.navigate(['/pessoa/listagem']);
+      } else {
+        alert('Erro ao cadastrar pessoa');
+      }
+
+    });
+  }
+
+  public chamarApiParaAtualizar(pessoa: Pessoa): void {
+    this.pessoaService.atualizar(pessoa).subscribe(resposta => {
+
+      if(resposta != null) {
+        alert('Pessoa atualizada com sucesso!');
+        this.router.navigate(['/pessoa/listagem']);
+      } else {
+        alert('Erro ao atualizar pessoa');
+      }
+
+    });
+  }
+
+  public chamarApiParaObterPessoaPorId(id: number): void {
+    this.pessoaService.obterPorId(id).subscribe(resposta => {
+
+      if(resposta != null) {
+        this.formulario.patchValue(resposta);
+      }
+
     });
   }
 
