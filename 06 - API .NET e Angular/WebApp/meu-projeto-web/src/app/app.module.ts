@@ -12,6 +12,7 @@ import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ValidatorComponent } from './components/validator/validator.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ValidatorComponent } from './components/validator/validator.component';
     HttpClientModule,
     HttpClientJsonpModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

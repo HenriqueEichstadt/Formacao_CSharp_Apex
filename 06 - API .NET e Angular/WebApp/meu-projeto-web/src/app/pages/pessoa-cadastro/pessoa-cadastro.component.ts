@@ -1,3 +1,4 @@
+import { AlertService } from './../../services/alert.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -19,7 +20,8 @@ export class PessoaCadastroComponent implements OnInit {
     public formBuilder: FormBuilder,
     public router: Router,
     public activatedRoute: ActivatedRoute,
-    public pessoaService: PessoaService
+    public pessoaService: PessoaService,
+    public alertService: AlertService
   ) { }
 
   public ngOnInit(): void {
@@ -66,10 +68,10 @@ export class PessoaCadastroComponent implements OnInit {
     this.pessoaService.adicionar(pessoa).subscribe(resposta => {
 
       if(resposta != null) {
-        alert('Pessoa cadastrada com sucesso!');
+        this.alertService.showToastrSuccess('Pessoa cadastrada com sucesso');
         this.router.navigate(['/pessoa/listagem']);
       } else {
-        alert('Erro ao cadastrar pessoa');
+        this.alertService.showToastrError('Erro ao cadastrar pessoa');
       }
 
     });
@@ -79,10 +81,10 @@ export class PessoaCadastroComponent implements OnInit {
     this.pessoaService.atualizar(pessoa).subscribe(resposta => {
 
       if(resposta != null) {
-        alert('Pessoa atualizada com sucesso!');
+        this.alertService.showToastrSuccess('Pessoa atualizada com sucesso');
         this.router.navigate(['/pessoa/listagem']);
       } else {
-        alert('Erro ao atualizar pessoa');
+        this.alertService.showToastrError('Erro ao atualizar pessoa');
       }
 
     });
