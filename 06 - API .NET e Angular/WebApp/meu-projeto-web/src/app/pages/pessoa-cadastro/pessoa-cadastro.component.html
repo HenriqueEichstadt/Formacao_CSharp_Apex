@@ -13,7 +13,7 @@
 
       <div class="form-group col-sm-12 col-md-12 col-lg-6">
         <label class="form-control-label label-obrigatorio">CPF</label>
-        <input type="text" class="form-control" placeholder="Preencha um CPF" formControlName="cpf">
+        <input type="text" class="form-control" placeholder="Preencha um CPF" formControlName="cpf" mask="000.000.000-00">
         <validator [formSubmitted]="this.formSubmetido" [errors]="this.formulario?.get('cpf')?.errors"></validator>
       </div>
 
@@ -25,7 +25,7 @@
 
       <div class="form-group col-sm-12 col-md-12 col-lg-6">
         <label class="form-control-label label-obrigatorio">Telefone</label>
-        <input type="text" class="form-control" placeholder="Preencha um telefone" formControlName="telefone">
+        <input type="text" class="form-control" placeholder="Preencha um telefone" formControlName="telefone" mask="(00) 0 0000-0000">
         <validator [formSubmitted]="this.formSubmetido" [errors]="this.formulario?.get('telefone')?.errors"></validator>
       </div>
 
