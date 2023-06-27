@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ValidatorComponent } from './components/validator/validator.component';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxMaskModule } from 'ngx-mask';
+import { CpfPipe } from './pipes/cpf.pipe';
+import { TelefonePipe } from './pipes/telefone.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { NgxMaskModule } from 'ngx-mask';
     BarraSuperiorComponent,
     PessoaListagemComponent,
     PessoaCadastroComponent,
-    ValidatorComponent
+    ValidatorComponent,
+    CpfPipe,
+    TelefonePipe
   ],
   imports: [
     BrowserModule,
