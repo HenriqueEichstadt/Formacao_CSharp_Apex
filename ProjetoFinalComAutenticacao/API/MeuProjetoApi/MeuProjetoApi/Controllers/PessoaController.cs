@@ -4,10 +4,12 @@ using MeuProjetoApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MeuProjetoApi.Controllers
 {
     [ApiController]
+    [Authorize]
     public class PessoaController : ControllerBase
     {
         public PessoaRepositorio Repositorio = new PessoaRepositorio();
@@ -164,7 +166,7 @@ namespace MeuProjetoApi.Controllers
                         var jsonRetorno = await response.Content.ReadAsStringAsync();
 
                         
-                        var objetoViaCep = JsonConvert.DeserializeObject<ViaCep>(jsonRetorno);
+                        var objetoViaCep = JsonConvert.DeserializeObject<ViaCepViewModel>(jsonRetorno);
 
 
                         return Ok(objetoViaCep);

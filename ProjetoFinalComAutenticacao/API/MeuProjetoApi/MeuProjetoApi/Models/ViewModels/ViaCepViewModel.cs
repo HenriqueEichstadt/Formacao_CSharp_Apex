@@ -2,7 +2,7 @@
 
 namespace MeuProjetoApi.Models
 {
-    public class ViaCep
+    public class ViaCepViewModel
     {
         public string Cep { get; set; }
 

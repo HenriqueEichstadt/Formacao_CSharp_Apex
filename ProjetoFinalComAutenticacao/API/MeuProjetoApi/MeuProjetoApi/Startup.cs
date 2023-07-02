@@ -75,9 +75,13 @@ namespace MeuProjetoApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Meu projeto API v1"));
             }
+            
+            app.UseAuthentication();
+            app.UseAuthorization();
+            
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Meu projeto API v1"));
             
             app.UseCors(option =>
             {
