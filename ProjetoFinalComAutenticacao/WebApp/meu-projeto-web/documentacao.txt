@@ -1,0 +1,16 @@
+
+Rodar projematTooltip
+  1º - certifique-se que está no diretório do projeto no terminal;
+  1º - Comando para executar:
+    ng s -o
+
+Criar novo componente
+
+  Opção 1
+    ng g component NOME_COMPONENTE
+
+  Opção 2
+    ng g c NOME_COMPONENTE
+
+Criar novo serviço
+  ng g s NOME_SERVICO

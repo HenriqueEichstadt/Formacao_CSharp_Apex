@@ -1,0 +1,40 @@
+
+<div class="container">
+  <h2 class="centralizar-texto">Cadastro de pessoa</h2>
+
+  <form [formGroup]="this.formulario" (ngSubmit)="this.submeterForm()" novalidate [ngClass]="{'submitted': this.formSubmetido}">
+    <div class="row">
+
+      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+        <label class="form-control-label label-obrigatorio">Nome</label>
+        <input type="text" class="form-control" placeholder="Preencha um nome" formControlName="nome">
+        <validator [formSubmitted]="this.formSubmetido" [errors]="this.formulario?.get('nome')?.errors"></validator>
+      </div>
+
+      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+        <label class="form-control-label label-obrigatorio">CPF</label>
+        <input type="text" class="form-control" placeholder="Preencha um CPF" formControlName="cpf" mask="000.000.000-00">
+        <validator [formSubmitted]="this.formSubmetido" [errors]="this.formulario?.get('cpf')?.errors"></validator>
+      </div>
+
+      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+        <label class="form-control-label label-obrigatorio">E-mail</label>
+        <input type="text" class="form-control" placeholder="Preencha um e-mail" formControlName="email">
+        <validator [formSubmitted]="this.formSubmetido" [errors]="this.formulario?.get('email')?.errors"></validator>
+      </div>
+
+      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+        <label class="form-control-label label-obrigatorio">Telefone</label>
+        <input type="text" class="form-control" placeholder="Preencha um telefone" formControlName="telefone" mask="(00) 0 0000-0000">
+        <validator [formSubmitted]="this.formSubmetido" [errors]="this.formulario?.get('telefone')?.errors"></validator>
+      </div>
+
+      <div class="form-group col-sm-12 action-buttons">
+        <a class="btn btn-secondary float-left" [routerLink]="['/pessoa/listagem']" queryParamsHandling="preserve">Voltar</a>
+        <button type="submit" class="btn btn-primary float-right">Salvar</button>
+      </div>
+
+    </div>
+  </form>
+
+</div>

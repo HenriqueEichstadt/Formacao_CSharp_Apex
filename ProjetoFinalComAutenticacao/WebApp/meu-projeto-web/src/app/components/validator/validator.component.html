@@ -1,0 +1,52 @@
+<div *ngIf="formSubmitted">
+  <ng-container>
+      <p *ngIf="errors && errors['required']" class="texto-erro">
+          Este campo é obrigatório
+      </p>
+      <p *ngIf="errors && errors['requiredTrue']" class="texto-erro">
+          Este campo deve ser checado
+      </p>
+      <p *ngIf="errors && errors['invalidDate']" class="texto-erro">
+          Data inválida
+      </p>
+      <p *ngIf="errors && errors['dateBeforeToday']" class="texto-erro">
+          Data não pode ser anterior a hoje
+      </p>
+      <p *ngIf="errors && errors['minlength']" class="texto-erro">
+          Mínimo de {{errors['minlength'].requiredLength}} caracteres
+      </p>
+      <p *ngIf="errors && errors['maxlength']" class="texto-erro">
+          Máximo de {{errors['maxlength'].requiredLength}} caracteres
+      </p>
+      <p *ngIf="errors && errors['min']" class="texto-erro">
+          Mínimo de {{errors['min'].min}}
+      </p>
+      <p *ngIf="errors && errors['max']" class="texto-erro">
+          Máximo de {{errors['max'].max}}
+      </p>
+      <p *ngIf="errors && errors['pattern']" class="texto-erro">
+          Insira apenas números
+      </p>
+      <p *ngIf="errors && errors['email']" class="texto-erro">
+          Formato de email inválido
+      </p>
+      <p *ngIf="errors && errors['mask']?.requiredMask === formatoCpf" class="texto-erro">
+          Formato de CPF inválido
+      </p>
+      <p *ngIf="errors && errors['invalidGreaterThan']" class="texto-erro">
+          Valor tem que ser maior que {{errors['invalidGreaterThan'].minValue}}
+      </p>
+      <p *ngIf="errors && errors['invalidGreaterThanEqualTo']" class="texto-erro">
+          Valor tem que ser maior ou igual que {{errors['invalidGreaterThanEqualTo'].value}}
+      </p>
+      <p *ngIf="errors && errors['invalidLessThan']" class="texto-erro">
+          Valor tem que ser menor que {{errors['invalidLessThan'].maxValue}}
+      </p>
+      <p *ngIf="errors && errors['invalidLessThanEqualTo']" class="texto-erro">
+          Valor tem que ser menor ou igual que {{errors['invalidLessThanEqualTo'].value}}
+      </p>
+      <p *ngIf="errors && errors['isValidCnpjCpf']" class="texto-erro">
+          CNPJ ou CPF inválido
+      </p>
+  </ng-container>
+</div>

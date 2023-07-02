@@ -1,0 +1,8 @@
+.label-obrigatorio {
+  font-weight: bold;
+}
+
+.label-obrigatorio::after {
+  content: " *";
+  color: red;
+}

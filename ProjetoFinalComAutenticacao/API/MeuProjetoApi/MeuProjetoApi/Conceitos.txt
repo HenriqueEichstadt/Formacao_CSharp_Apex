@@ -1,0 +1,79 @@
+﻿
+API
+	- Application Programming Interface
+	- REST
+		- JSON
+		
+		Tipos de requisições aceitas
+			- GET (obter informação)
+			- POST (adicionar informação)
+			- PUT (atualizar alguma informação)
+			- DELETE (excluir alguma informação)
+
+		Tipos de respostas de requisições
+			- Ok() 			// Status code 200
+			- BadRequest()  // Status code 400
+			- Created() 	// Status code 201
+			- NotFound() 	// Status code 404
+			- NoContent() 	// Status code 204
+		
+		Formas de enviar dados para API
+			- URL	[FromQuery]
+				- Exemplo:
+					http://localhost:58423/pessoa/adicionar
+					?nome=Henrique
+					&Cpf=0000000
+					&Telefone=47965324
+
+					http://localhost:58423/pessoa/obter/1
+					http://localhost:58423/pessoa/excluir/1
+			
+			- Corpo da requisição [FromBody]
+				- JSON
+			
+		
+	- SOAP
+		- XML
+		- Web Service
+		
+
+http
+
+	- Hypertext transfer protocol
+	
+
+http://localhost:58423/swagger/index.html
+
+
+
+http://localhost:58423/pessoa/obter
+
+XML
+
+<Objeto>
+	<date>"2023-06-06T19:30:01.1959835-03:00"</date>
+	<temperatureC>53</temperatureC>
+	<temperatureF>127</temperatureF>
+	<summary>"Hot"</summary>
+</Objeto>
+
+
+JSON - Javascript Object Notation
+
+[
+  {
+    "date": "2023-06-06T19:30:01.1959835-03:00",
+    "temperatureC": 53,
+    "temperatureF": 127,
+    "summary": "Hot"
+  }
+]
+
+public class PrevisaoTempo
+{
+	public DateTime Date {get;set;}
+	public int TemperatureC {get;set;}
+	public int TemperatureF {get;set;}
+	public string Summary {get;set;}
+}
+

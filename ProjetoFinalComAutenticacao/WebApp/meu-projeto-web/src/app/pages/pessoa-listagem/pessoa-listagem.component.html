@@ -1,0 +1,54 @@
+
+<div class="container-fluid">
+  <h2 class="centralizar-texto">Listagem de pessoas</h2>
+
+  <div class="container-fluid d-flex justify-content-end">
+    <a class="btn btn-success" style="margin-bottom: 10px;" [routerLink]="['/pessoa/cadastro']" queryParamsHandling="preserve">Adicionar</a>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table">
+
+      <thead>
+        <tr>
+          <th>Ações</th>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>CPF</th>
+          <th>Telefone</th>
+          <th>E-mail</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let pessoa of this.listaPessoas">
+          <td>
+            <!-- Botão de Edição -->
+            <a class="btn btn-primary btn-sm" style="margin-right: 5px;" [routerLink]="['/pessoa/cadastro/', pessoa.id]">Editar</a>
+
+            <!-- Botão de Exclusão -->
+            <a class="btn btn-danger btn-sm" style="margin-right: 5px;" (click)="this.confirmarEExcluir(pessoa.id)">Excluir</a>
+        </td>
+          <td>{{pessoa.id}}</td>
+          <td>{{pessoa.nome}}</td>
+          <td>{{pessoa.cpf | cpf}}</td>
+          <td>{{pessoa.telefone | telefone}}</td>
+          <td>{{pessoa.email}}</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+  </div>
+
+
+
+
+
+
+
+</div>
+
+
+
