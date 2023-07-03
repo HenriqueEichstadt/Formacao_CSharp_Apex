@@ -3,6 +3,7 @@ using MeuProjetoApi.BancoDados.Contexto;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MeuProjetoApi.Migrations
 {
     [DbContext(typeof(MeuProjetoApiContexto))]
-    partial class MeuProjetoApiContextoModelSnapshot : ModelSnapshot
+    [Migration("20230703132251_AdicionandoTipoUsuario")]
+    partial class AdicionandoTipoUsuario
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -98,15 +101,6 @@ namespace MeuProjetoApi.Migrations
                             NomeUsuario = "admin",
                             Senha = "admin",
                             Tipo = "administrador"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Ativo = false,
-                            Email = "ze@email.com",
-                            NomeUsuario = "Zé",
-                            Senha = "123",
-                            Tipo = "usuario"
                         });
                 });
 #pragma warning restore 612, 618

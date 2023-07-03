@@ -24,7 +24,6 @@ namespace MeuProjetoApi.BancoDados.Configs
 
             builder.Property(x => x.Telefone)
                 .HasMaxLength(30);
-
         }
     }
 }

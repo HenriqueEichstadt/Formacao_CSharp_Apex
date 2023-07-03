@@ -6,4 +6,5 @@ public class LoginViewModel
     public DateTime DataExpiracao { get; set; }
     public string NomeUsuario { get; set; }
     public string Email { get; set; }
+    public string TipoPerfil { get; set; }
 }

@@ -9,6 +9,7 @@ import {AutenticacaoService} from "../../services/autenticacao.service";
 export class MenuPrincipalComponent implements OnInit, OnDestroy {
 
   public nomeUsuario: string = null;
+  public tipoPerfilEhAdmin: boolean = null;
 
   constructor(
     public autenticacaoService: AutenticacaoService
@@ -18,6 +19,7 @@ export class MenuPrincipalComponent implements OnInit, OnDestroy {
     document.title = 'Menu principal';
 
     this.nomeUsuario = this.autenticacaoService.obterNomeUsuario();
+    this.tipoPerfilEhAdmin = this.autenticacaoService.tipoPerfilEhAdmin();
   }
 
   public ngOnDestroy(): void {

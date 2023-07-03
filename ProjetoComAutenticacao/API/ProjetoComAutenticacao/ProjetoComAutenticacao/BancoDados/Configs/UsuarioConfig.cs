@@ -29,5 +29,16 @@ public class UsuarioConfig: IEntityTypeConfiguration<Usuario>
         builder.Property(x => x.Ativo)
             .HasDefaultValue(true)
             .IsRequired();
+        
+        builder.Property(x => x.Tipo)
+            .HasDefaultValue("usuario")
+            .HasMaxLength(30);
+
+        builder.HasData(new List<Usuario>()
+        {
+            //migrationBuilder.Sql("INSERT INTO Usuarios (NomeUsuario, Email, Senha) VALUES ('admin', 'admin@email.com', 'admin');");
+            new Usuario() { Id = 1, NomeUsuario = "admin", Email = "admin@email.com", Senha = "admin", Tipo = "administrador" },
+            new Usuario() { Id = 2, NomeUsuario = "Jose", Email = "jose@email.com", Senha = "123", Tipo = "usuario" }
+        });
     }
 }

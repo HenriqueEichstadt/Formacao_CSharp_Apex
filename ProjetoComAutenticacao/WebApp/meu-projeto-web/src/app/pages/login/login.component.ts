@@ -59,7 +59,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.autenticacaoService.login(dadosLogin).subscribe(resposta => {
 
       if(resposta != null) {
-        this.autenticacaoService.iniciarSessao(resposta.token, resposta.dataExpiracao, resposta.nomeUsuario, resposta.email);
+        this.autenticacaoService.iniciarSessao(resposta.token, resposta.dataExpiracao, resposta.nomeUsuario, resposta.email, resposta.tipoPerfil);
         this.alertService.showToastrSuccess('Login efetuado com sucesso');
         this.redirecionarParaMenuPrincipal();
       } else {

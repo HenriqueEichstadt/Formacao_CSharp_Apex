@@ -25,8 +25,6 @@ namespace MeuProjetoApi.Migrations
                 {
                     table.PrimaryKey("PK_Usuarios", x => x.Id);
                 });
-            
-            migrationBuilder.Sql("INSERT INTO Usuarios (NomeUsuario, Email, Senha) VALUES ('admin', 'admin@email.com', 'admin');");
         }
 
         /// <inheritdoc />
