@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import {AutenticacaoService} from "../../services/autenticacao.service";
 
 @Component({
   selector: 'app-menu-principal',
@@ -7,14 +8,16 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 })
 export class MenuPrincipalComponent implements OnInit, OnDestroy {
 
-  // propriedades
-  public titlee: string = 'Meu projeto WEB';
-  teste = 'teste 123';
-  public deveRenderizarPalavraRecursos: boolean = false;
+  public nomeUsuario: string = null;
 
-  // métodos
+  constructor(
+    public autenticacaoService: AutenticacaoService
+  ) { }
+
   public ngOnInit(): void {
     document.title = 'Menu principal';
+
+    this.nomeUsuario = this.autenticacaoService.obterNomeUsuario();
   }
 
   public ngOnDestroy(): void {
