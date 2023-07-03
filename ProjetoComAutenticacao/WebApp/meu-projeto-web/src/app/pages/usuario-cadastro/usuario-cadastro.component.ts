@@ -29,7 +29,7 @@ export class UsuarioCadastroComponent implements OnInit {
   public ngOnInit(): void {
     this.id = this.activatedRoute.snapshot.params['id'];
 
-    if(!this.autenticacaoService.tipoPerfilEhAdmin() && this.id == null || (this.id != this.autenticacaoService.obterIdUsuario())) {
+    if(!this.autenticacaoService.tipoPerfilEhAdmin() && (this.id == null || this.id != this.autenticacaoService.obterIdUsuario())) {
       this.router.navigate(['/principal']);
     }
 
