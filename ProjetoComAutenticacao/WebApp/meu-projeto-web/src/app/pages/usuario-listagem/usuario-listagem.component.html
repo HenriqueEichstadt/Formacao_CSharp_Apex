@@ -1,0 +1,54 @@
+
+<div class="container-fluid">
+  <h2 class="centralizar-texto">Listagem de usuários</h2>
+
+  <div class="container-fluid d-flex justify-content-end">
+    <a class="btn btn-success" style="margin-bottom: 10px;" [routerLink]="['/usuario/cadastro']" queryParamsHandling="preserve">Adicionar</a>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table">
+
+      <thead>
+        <tr>
+          <th>Ações</th>
+          <th>Id</th>
+          <th>Nome usuário</th>
+          <th>E-mail</th>
+          <th>Ativo</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let usuario of this.listaUsuarios">
+          <td>
+            <!-- Botão de Edição -->
+            <a class="btn btn-primary btn-sm" style="margin-right: 5px;" [routerLink]="['/usuario/cadastro/', usuario.id]">Editar</a>
+
+            <!-- Botão para alterar status -->
+            <a class="btn btn-sm" [ngClass]="{'btn-danger': usuario.ativo, 'btn-success': !usuario.ativo}" style="margin-right: 5px;" (click)="this.alterarStatus(usuario)">{{usuario.ativo ? 'Desativar' : 'Ativar'}}</a>
+        </td>
+          <td>{{usuario.id}}</td>
+          <td>{{usuario.nomeUsuario}}</td>
+          <td>{{usuario.email}}</td>
+          <td>{{usuario.ativo ? 'Sim' : 'Não'}}</td>
+          <td>{{usuario.tipo == 'administrador' ? 'Administrador' : 'Usuário'}}</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+  </div>
+
+
+
+
+
+
+
+</div>
+
+
+

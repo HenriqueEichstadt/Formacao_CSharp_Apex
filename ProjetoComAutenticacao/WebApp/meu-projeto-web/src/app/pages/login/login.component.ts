@@ -59,7 +59,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.autenticacaoService.login(dadosLogin).subscribe(resposta => {
 
       if(resposta != null) {
-        this.autenticacaoService.iniciarSessao(resposta.token, resposta.dataExpiracao, resposta.nomeUsuario, resposta.email, resposta.tipoPerfil);
+        this.autenticacaoService.iniciarSessao(resposta.token, resposta.dataExpiracao, resposta.nomeUsuario, resposta.email, resposta.tipoPerfil, resposta.idUsuario);
         this.alertService.showToastrSuccess('Login efetuado com sucesso');
         this.redirecionarParaMenuPrincipal();
       } else {
@@ -67,7 +67,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       }
 
     }, exception => {
-      let mensagemErro = exception?.error instanceof String ? exception?.error : '';
+      let mensagemErro = typeof(exception?.error) == "string" ? exception?.error : '';
       this.alertService.showToastrError('Erro ao conectar com o servidor', mensagemErro);
     });
   }

@@ -19,6 +19,8 @@ import { TelefonePipe } from './pipes/telefone.pipe';
 import {UsuarioLogadoGuard} from "./guards/usuario-logado.guard";
 import { LoginComponent } from './pages/login/login.component';
 import {AuthInterceptor} from "./interceptors/requisicao.interceptor";
+import {UsuarioListagemComponent} from "./pages/usuario-listagem/usuario-listagem.component";
+import {UsuarioCadastroComponent} from "./pages/usuario-cadastro/usuario-cadastro.component";
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import {AuthInterceptor} from "./interceptors/requisicao.interceptor";
     BarraSuperiorComponent,
     PessoaListagemComponent,
     PessoaCadastroComponent,
+    UsuarioListagemComponent,
+    UsuarioCadastroComponent,
     ValidatorComponent,
     CpfPipe,
     TelefonePipe,

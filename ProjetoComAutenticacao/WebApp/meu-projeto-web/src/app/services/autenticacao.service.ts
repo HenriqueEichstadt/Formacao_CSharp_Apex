@@ -13,6 +13,7 @@ export class AutenticacaoService {
   private chaveLocalStorageNomeUsuario: string = 'sessao-nome-usuario';
   private chaveLocalStorageEmail: string = 'sessao-email-usuario';
   private chaveLocalStorageTipoPerfil: string = 'sessao-tipo-perfil-usuario';
+  private chaveLocalStorageIdUsuario: string = 'sessao-tipo-id-usuario';
   private urlBase = 'http://localhost:5000/';
 
   constructor(
@@ -59,12 +60,17 @@ export class AutenticacaoService {
     return localStorage.getItem(this.chaveLocalStorageTipoPerfil) == "administrador";
   }
 
-  public iniciarSessao(token: string, dataExpiracao: string, nomeUsuario: string, email: string, tipoPerfil: string): void {
+  public obterIdUsuario(): number {
+    return Number(localStorage.getItem(this.chaveLocalStorageIdUsuario));
+  }
+
+  public iniciarSessao(token: string, dataExpiracao: string, nomeUsuario: string, email: string, tipoPerfil: string, idUsuario: number): void {
     localStorage.setItem(this.chaveLocalStorageToken, token);
     localStorage.setItem(this.chaveLocalStorageDataExpiracaoToken, dataExpiracao);
     localStorage.setItem(this.chaveLocalStorageNomeUsuario, nomeUsuario);
     localStorage.setItem(this.chaveLocalStorageEmail, email);
     localStorage.setItem(this.chaveLocalStorageTipoPerfil, tipoPerfil);
+    localStorage.setItem(this.chaveLocalStorageIdUsuario, idUsuario.toString());
   }
 
   private limparSessao(): void {
@@ -73,6 +79,7 @@ export class AutenticacaoService {
     localStorage.removeItem(this.chaveLocalStorageNomeUsuario);
     localStorage.removeItem(this.chaveLocalStorageEmail);
     localStorage.removeItem(this.chaveLocalStorageTipoPerfil);
+    localStorage.removeItem(this.chaveLocalStorageIdUsuario);
   }
 
 }

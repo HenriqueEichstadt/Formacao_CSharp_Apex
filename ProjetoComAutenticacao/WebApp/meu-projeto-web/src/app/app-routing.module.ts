@@ -6,6 +6,8 @@ import { PessoaListagemComponent } from './pages/pessoa-listagem/pessoa-listagem
 import { PessoaCadastroComponent } from './pages/pessoa-cadastro/pessoa-cadastro.component';
 import {UsuarioLogadoGuard} from "./guards/usuario-logado.guard";
 import {LoginComponent} from "./pages/login/login.component";
+import {UsuarioListagemComponent} from "./pages/usuario-listagem/usuario-listagem.component";
+import {UsuarioCadastroComponent} from "./pages/usuario-cadastro/usuario-cadastro.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/principal', pathMatch: 'full' },
@@ -16,6 +18,14 @@ const routes: Routes = [
     component: BarraSuperiorComponent,
     children: [
       { path: 'principal', component: MenuPrincipalComponent },
+      {
+        path: 'usuario',
+        children: [
+          { path: 'listagem', component: UsuarioListagemComponent },
+          { path: 'cadastro', component: UsuarioCadastroComponent },
+          { path: 'cadastro/:id', component: UsuarioCadastroComponent },
+        ]
+      },
       {
         path: 'pessoa',
         children: [

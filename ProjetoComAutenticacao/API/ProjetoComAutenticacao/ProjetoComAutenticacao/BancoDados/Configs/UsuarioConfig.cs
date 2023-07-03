@@ -32,7 +32,8 @@ public class UsuarioConfig: IEntityTypeConfiguration<Usuario>
         
         builder.Property(x => x.Tipo)
             .HasDefaultValue("usuario")
-            .HasMaxLength(30);
+            .HasMaxLength(30)
+            .IsRequired();
 
         builder.HasData(new List<Usuario>()
         {

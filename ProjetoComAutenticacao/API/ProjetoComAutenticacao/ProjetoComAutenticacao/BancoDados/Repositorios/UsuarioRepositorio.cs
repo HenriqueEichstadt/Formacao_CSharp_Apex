@@ -44,6 +44,7 @@ public class UsuarioRepositorio
         using (var bancoDeDados = new MeuProjetoApiContexto())
         {
             var usuario = bancoDeDados.TabelaUsuarios.Where(u => u.Id == id).FirstOrDefault();
+
             return usuario;
         }
     }
@@ -52,8 +53,9 @@ public class UsuarioRepositorio
     {
         using (var bancoDeDados = new MeuProjetoApiContexto())
         {
-            var listauUsuarios = bancoDeDados.TabelaUsuarios.ToList();
-            return listauUsuarios;
+            var listaUsuarios = bancoDeDados.TabelaUsuarios.ToList();
+            
+            return listaUsuarios;
         }
     }
 
@@ -70,8 +72,8 @@ public class UsuarioRepositorio
     {
         using (var bancoDeDados = new MeuProjetoApiContexto())
         {
-            var usuario = bancoDeDados.TabelaUsuarios.Where(u => u.NomeUsuario.ToLower() == nomeUsuarioOuEmail.ToLower() 
-                                                                 || u.Email.ToLower() == nomeUsuarioOuEmail.ToLower()).FirstOrDefault();
+            var usuario = bancoDeDados.TabelaUsuarios.Where(u => u.NomeUsuario == nomeUsuarioOuEmail 
+                                                                 || u.Email == nomeUsuarioOuEmail).FirstOrDefault();
             return usuario;
         }
     }

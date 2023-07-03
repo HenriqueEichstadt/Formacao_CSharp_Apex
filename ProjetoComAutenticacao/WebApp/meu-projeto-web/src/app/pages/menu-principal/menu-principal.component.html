@@ -19,24 +19,24 @@
 
   <div class="col-lg-4 mb-4 mb-lg-0" *ngIf="this.tipoPerfilEhAdmin">
 
-    <div class="card cor-azul text-white text-center mb-4 pointer">
+    <div class="card cor-azul text-white text-center mb-4 pointer" [routerLink]="['/usuario/listagem']" queryParamsHandling="preserve">
       <div class="card-body">
         <h5 class="card-title">Usuários</h5>
-        <p>Falta implementar</p>
+        <p>Usuários cadastrados no sistema</p>
       </div>
     </div>
 
   </div>
 
-  <div class="col-lg-4 mb-4 mb-lg-0">
+<!--  <div class="col-lg-4 mb-4 mb-lg-0">-->
 
-    <div class="card cor-azul text-white text-center mb-4 pointer">
-      <div class="card-body">
-        <h5 class="card-title">card disponível</h5>
-        <p>Acrescente uma descrição aqui</p>
-      </div>
-    </div>
+<!--    <div class="card cor-azul text-white text-center mb-4 pointer">-->
+<!--      <div class="card-body">-->
+<!--        <h5 class="card-title">card disponível</h5>-->
+<!--        <p>Acrescente uma descrição aqui</p>-->
+<!--      </div>-->
+<!--    </div>-->
 
-  </div>
+<!--  </div>-->
 
 </div>
