@@ -7,4 +7,5 @@ public class LoginViewModel
     public string NomeUsuario { get; set; }
     public string Email { get; set; }
     public string TipoPerfil { get; set; }
+    public int IdUsuario { get; set; }
 }

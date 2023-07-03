@@ -64,6 +64,7 @@ public class AutenticacaoController : ControllerBase
                 NomeUsuario = usuario.NomeUsuario,
                 Email = usuario.Email,
                 TipoPerfil = usuario.Tipo,
+                IdUsuario = usuario.Id
             };
 
             return Ok(loginViewModel);
