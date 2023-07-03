@@ -8,7 +8,7 @@ import { BarraSuperiorComponent } from './components/barra-superior/barra-superi
 import { PessoaListagemComponent } from './pages/pessoa-listagem/pessoa-listagem.component';
 import { PessoaCadastroComponent } from './pages/pessoa-cadastro/pessoa-cadastro.component';
 import { CommonModule } from '@angular/common';
-import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientJsonpModule, HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ValidatorComponent } from './components/validator/validator.component';
@@ -18,6 +18,7 @@ import { CpfPipe } from './pipes/cpf.pipe';
 import { TelefonePipe } from './pipes/telefone.pipe';
 import {UsuarioLogadoGuard} from "./guards/usuario-logado.guard";
 import { LoginComponent } from './pages/login/login.component';
+import {AuthInterceptor} from "./interceptors/requisicao.interceptor";
 
 @NgModule({
   declarations: [
@@ -43,7 +44,14 @@ import { LoginComponent } from './pages/login/login.component';
     ToastrModule.forRoot(),
     NgxMaskModule.forRoot(),
   ],
-  providers: [UsuarioLogadoGuard],
+  providers: [
+    UsuarioLogadoGuard,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

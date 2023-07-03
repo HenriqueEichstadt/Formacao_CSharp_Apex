@@ -8,8 +8,10 @@ import {Router} from "@angular/router";
 })
 export class AutenticacaoService {
 
-  private chaveLocalStorageToken: string = 'token-login';
-  private chaveLocalStorageDataExpiracaoToken: string = 'token-data-expiracao';
+  private chaveLocalStorageToken: string = 'sessao-token';
+  private chaveLocalStorageDataExpiracaoToken: string = 'sessao-token-data-expiracao';
+  private chaveLocalStorageNomeUsuario: string = 'sessao-nome-usuario';
+  private chaveLocalStorageEmail: string = 'sessao-email-usuario';
   private urlBase = 'http://localhost:5000/';
 
   constructor(
@@ -22,7 +24,7 @@ export class AutenticacaoService {
   }
 
   public estaLogado(): boolean {
-    const tokenStorage = localStorage.getItem(this.chaveLocalStorageToken);
+    const tokenStorage = this.obterTokenLogin();
 
     return tokenStorage != null && tokenStorage != "" && this.dataExpiracaoTokenMaiorQueAgora();
   }
@@ -44,14 +46,26 @@ export class AutenticacaoService {
     this.router.navigate(["/login"]);
   }
 
-  public iniciarSessao(token: string, dataExpiracao: string): void {
+  public obterTokenLogin(): string {
+    return localStorage.getItem(this.chaveLocalStorageToken);
+  }
+
+  public obterNomeUsuario(): string {
+    return localStorage.getItem(this.chaveLocalStorageNomeUsuario);
+  }
+
+  public iniciarSessao(token: string, dataExpiracao: string, nomeUsuario: string, email: string): void {
     localStorage.setItem(this.chaveLocalStorageToken, token);
     localStorage.setItem(this.chaveLocalStorageDataExpiracaoToken, dataExpiracao);
+    localStorage.setItem(this.chaveLocalStorageNomeUsuario, nomeUsuario);
+    localStorage.setItem(this.chaveLocalStorageEmail, email);
   }
 
   private limparSessao(): void {
     localStorage.removeItem(this.chaveLocalStorageToken);
     localStorage.removeItem(this.chaveLocalStorageDataExpiracaoToken);
+    localStorage.removeItem(this.chaveLocalStorageNomeUsuario);
+    localStorage.removeItem(this.chaveLocalStorageEmail);
   }
 
 }

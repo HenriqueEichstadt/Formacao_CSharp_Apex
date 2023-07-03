@@ -74,6 +74,9 @@ export class PessoaCadastroComponent implements OnInit {
         this.alertService.showToastrError('Erro ao cadastrar pessoa');
       }
 
+    }, exception => {
+      let mensagemErro = exception?.error instanceof String ? exception?.error : '';
+      this.alertService.showToastrError('Erro ao conectar com o servidor', mensagemErro);
     });
   }
 
@@ -87,6 +90,9 @@ export class PessoaCadastroComponent implements OnInit {
         this.alertService.showToastrError('Erro ao atualizar pessoa');
       }
 
+    }, exception => {
+      let mensagemErro = exception?.error instanceof String ? exception?.error : '';
+      this.alertService.showToastrError('Erro ao conectar com o servidor', mensagemErro);
     });
   }
 
@@ -97,6 +103,9 @@ export class PessoaCadastroComponent implements OnInit {
         this.formulario.patchValue(resposta);
       }
 
+    }, exception => {
+      let mensagemErro = exception?.error instanceof String ? exception?.error : '';
+      this.alertService.showToastrError('Erro ao conectar com o servidor', mensagemErro);
     });
   }
 

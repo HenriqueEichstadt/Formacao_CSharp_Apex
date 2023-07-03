@@ -33,6 +33,9 @@ export class PessoaListagemComponent implements OnInit {
         this.alertService.showToastrError('Erro na requisição com o servidor');
       }
 
+    }, exception => {
+      let mensagemErro = exception?.error instanceof String ? exception?.error : '';
+      this.alertService.showToastrError('Erro ao conectar com o servidor', mensagemErro);
     });
   }
 
@@ -59,6 +62,10 @@ export class PessoaListagemComponent implements OnInit {
 
       this.alertService.showToastrSuccess('A pessoa foi excluída com sucesso');
       this.obterPessoasDaApi();
+
+    }, exception => {
+      let mensagemErro = exception?.error instanceof String ? exception?.error : '';
+      this.alertService.showToastrError('Erro ao conectar com o servidor', mensagemErro);
     });
   }
 

@@ -61,6 +61,8 @@ public class AutenticacaoController : ControllerBase
             {
                 Token = "Bearer " + new JwtSecurityTokenHandler().WriteToken(token),
                 DataExpiracao = token.ValidTo,
+                NomeUsuario = usuario.NomeUsuario,
+                Email = usuario.Email
             };
 
             return Ok(loginViewModel);
