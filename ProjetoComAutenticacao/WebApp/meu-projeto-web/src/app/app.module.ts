@@ -16,6 +16,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { NgxMaskModule } from 'ngx-mask';
 import { CpfPipe } from './pipes/cpf.pipe';
 import { TelefonePipe } from './pipes/telefone.pipe';
+import {UsuarioLogadoGuard} from "./guards/usuario-logado.guard";
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { TelefonePipe } from './pipes/telefone.pipe';
     PessoaCadastroComponent,
     ValidatorComponent,
     CpfPipe,
-    TelefonePipe
+    TelefonePipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,7 @@ import { TelefonePipe } from './pipes/telefone.pipe';
     ToastrModule.forRoot(),
     NgxMaskModule.forRoot(),
   ],
-  providers: [],
+  providers: [UsuarioLogadoGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -23,7 +23,7 @@ public class AutenticacaoController : ControllerBase
     [ProducesResponseType(typeof(LoginViewModel), (int)HttpStatusCode.Created)]
     [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
     [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
-    public IActionResult Adicionar([FromBody] LoginCommand loginCommand)
+    public IActionResult Login([FromBody] LoginCommand loginCommand)
     {
         try
         {

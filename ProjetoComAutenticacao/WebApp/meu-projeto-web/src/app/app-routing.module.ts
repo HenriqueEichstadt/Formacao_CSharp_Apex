@@ -4,11 +4,15 @@ import { MenuPrincipalComponent } from './pages/menu-principal/menu-principal.co
 import { BarraSuperiorComponent } from './components/barra-superior/barra-superior.component';
 import { PessoaListagemComponent } from './pages/pessoa-listagem/pessoa-listagem.component';
 import { PessoaCadastroComponent } from './pages/pessoa-cadastro/pessoa-cadastro.component';
+import {UsuarioLogadoGuard} from "./guards/usuario-logado.guard";
+import {LoginComponent} from "./pages/login/login.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/principal', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
   {
     path: '',
+    canActivate: [UsuarioLogadoGuard],
     component: BarraSuperiorComponent,
     children: [
       { path: 'principal', component: MenuPrincipalComponent },
