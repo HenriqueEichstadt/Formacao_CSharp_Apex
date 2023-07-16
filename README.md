@@ -216,4 +216,36 @@ Repositório do curso de Formação Programador C# da Apex Ensino (Início em 20
 		- ngx-mask
 			- comando para instalar: npm install --save ngx-mask
 			- configuração: no app.module, adicionar "NgxMaskModule.forRoot()" nos imports
-			
+
+## Aula - 28/06
+	continuando assunto...
+## Aula - 03/07
+	- Iniciar um projeto de conclusão do curso.
+
+## Aula - 05/07
+	- Acompanhar o projeto e tirar dúvidas.
+
+## Aula - 10/07
+	- Acompanhar o projeto e tirar dúvidas.
+
+## Aula - 12/07
+	- Acompanhar o projeto e tirar dúvidas.
+
+## Aula - 17/07
+	- Avaliar os projetos e dar feedbacks da solução para os alunos.
+
+	- Links do drive contendo cursos baixados das plataformas 'Alura cursos online', 'balta.io' e 'desenvolvedor.io'
+		- Alura cursos online:
+			- link do plano de estudos com os cursos baixados: https://cursos.alura.com.br/fullstack-developer-net-eamp-angular-henrique98ti-1689534307071-p624500
+			- link ondrive com os cursos: https://1drv.ms/f/s!Ah2a3RQYqSSqpPl6T8XAaRy4jIrcWg?e=xFORV6
+			- Tem cursos sobre 'Versionamento de código (git)', 'metodologias ágeis', 'desenvolvimento Front-End' e 'desenvolvimento Back-End'
+
+		- balta.io
+			- link ondrive com os cursos: https://1drv.ms/f/s!Ah2a3RQYqSSqhaMrzLWhzJyFy4XYZg?e=H7Jdtt
+			- O curso 'Modern Web Apps 2017' é uma boa forma de aprender a desenvolver com arquitetura em camada (separando responsabilidades em projetos separados).
+
+		- desenvolvedor.io
+			- link ondrive com os cursos: https://1drv.ms/f/s!Ah2a3RQYqSSqgpA0SDL6F2dzml27og?e=HdtGRJ
+			- O curso 'Entity Framework Core' é o mais completo sobre o framework que já fiz.
+
+## END
